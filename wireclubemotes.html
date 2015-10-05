@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    background-color: #fefdfd;
+}
+th, td {
+    padding-left: 5px;
+}
+
+
+.emoji { 
+    background:url(https://wireclub-a.akamaihd.net/uiResources/emojis?v=1) no-repeat;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    vertical-align:middle
+}
+.flag {
+    background:url(https://wireclub-a.akamaihd.net/content/images/flags/sprite.png?v=2) no-repeat;
+    display:inline-block;
+    width:16px;
+    height:11px
+}
+
+.e001{background-position:-0px -0px;}
+.e002{background-position:-20px -0px;}
+.e003{background-position:-40px -0px;}
+.e005{background-position:-60px -0px;}
+.e006{background-position:-80px -0px;}
+.e007{background-position:-100px -0px;}
+.e008{background-position:-120px -0px;}
+.e009{background-position:-140px -0px;}
+.e00a{background-position:-160px -0px;}
+.e00b{background-position:-180px -0px;}
+.e00c{background-position:-200px -0px;}
+.e00d{background-position:-220px -0px;}
+.e00e{background-position:-240px -0px;}
+.e00f{background-position:-260px -0px;}
+.e010{background-position:-280px -0px;}
+.e011{background-position:-300px -0px;}
+.e012{background-position:-320px -0px;}
+.e013{background-position:-340px -0px;}
+.e014{background-position:-360px -0px;}
+.e015{background-position:-380px -0px;}
+.e016{background-position:-0px -20px;}
+.e017{background-position:-20px -20px;}
+.e018{background-position:-40px -20px;}
+.e019{background-position:-60px -20px;}
+.e01a{background-position:-80px -20px;}
+.e01b{background-position:-100px -20px;}
+.e01c{background-position:-120px -20px;}
+.e01d{background-position:-140px -20px;}
+.e01e{background-position:-160px -20px;}
+.e022{background-position:-180px -20px;}
+.e023{background-position:-200px -20px;}
+.e02d{background-position:-220px -20px;}
+.e030{background-position:-240px -20px;}
+.e031{background-position:-260px -20px;}
+.e032{background-position:-280px -20px;}
+.e033{background-position:-300px -20px;}
+.e034{background-position:-320px -20px;}
+.e035{background-position:-340px -20px;}
+.e036{background-position:-360px -20px;}
+.e037{background-position:-380px -20px;}
+.e038{background-position:-0px -40px;}
+.e039{background-position:-20px -40px;}
+.e03a{background-position:-40px -40px;}
+.e03c{background-position:-60px -40px;}
+.e03d{background-position:-80px -40px;}
+.e03e{background-position:-100px -40px;}
+.e03f{background-position:-120px -40px;}
+.e040{background-position:-140px -40px;}
+.e041{background-position:-160px -40px;}
+.e042{background-position:-180px -40px;}
+.e043{background-position:-200px -40px;}
+.e044{background-position:-220px -40px;}
+.e045{background-position:-240px -40px;}
+.e046{background-position:-260px -40px;}
+.e047{background-position:-280px -40px;}
+.e048{background-position:-300px -40px;}
+.e049{background-position:-320px -40px;}
+.e04a{background-position:-340px -40px;}
+.e04b{background-position:-360px -40px;}
+.e04c{background-position:-380px -40px;}
+.e04d{background-position:-0px -60px;}
+.e04e{background-position:-20px -60px;}
+.e04f{background-position:-40px -60px;}
+.e050{background-position:-60px -60px;}
+.e051{background-position:-80px -60px;}
+.e052{background-position:-100px -60px;}
+.e053{background-position:-120px -60px;}
+.e054{background-position:-140px -60px;}
+.e055{background-position:-160px -60px;}
+.e056{background-position:-180px -60px;}
+.e057{background-position:-200px -60px;}
+.e058{background-position:-220px -60px;}
+.e059{background-position:-240px -60px;}
+.e05a{background-position:-260px -60px;}
+.e101{background-position:-280px -60px;}
+.e102{background-position:-300px -60px;}
+.e103{background-position:-320px -60px;}
+.e105{background-position:-340px -60px;}
+.e106{background-position:-360px -60px;}
+.e107{background-position:-380px -60px;}
+.e108{background-position:-0px -80px;}
+.e109{background-position:-20px -80px;}
+.e10a{background-position:-40px -80px;}
+.e10b{background-position:-60px -80px;}
+.e10c{background-position:-80px -80px;}
+.e10d{background-position:-100px -80px;}
+.e10e{background-position:-120px -80px;}
+.e10f{background-position:-140px -80px;}
+.e110{background-position:-160px -80px;}
+.e111{background-position:-180px -80px;}
+.e112{background-position:-200px -80px;}
+.e113{background-position:-220px -80px;}
+.e114{background-position:-240px -80px;}
+.e115{background-position:-260px -80px;}
+.e116{background-position:-280px -80px;}
+.e117{background-position:-300px -80px;}
+.e118{background-position:-320px -80px;}
+.e119{background-position:-340px -80px;}
+.e11a{background-position:-360px -80px;}
+.e11b{background-position:-380px -80px;}
+.e11c{background-position:-0px -100px;}
+.e11d{background-position:-20px -100px;}
+.e11e{background-position:-40px -100px;}
+.e11f{background-position:-60px -100px;}
+.e120{background-position:-80px -100px;}
+.e121{background-position:-100px -100px;}
+.e122{background-position:-120px -100px;}
+.e123{background-position:-140px -100px;}
+.e124{background-position:-160px -100px;}
+.e125{background-position:-180px -100px;}
+.e126{background-position:-200px -100px;}
+.e127{background-position:-220px -100px;}
+.e128{background-position:-240px -100px;}
+.e129{background-position:-260px -100px;}
+.e12a{background-position:-280px -100px;}
+.e12b{background-position:-300px -100px;}
+.e12d{background-position:-320px -100px;}
+.e12e{background-position:-340px -100px;}
+.e12f{background-position:-360px -100px;}
+.e130{background-position:-380px -100px;}
+.e131{background-position:-0px -120px;}
+.e132{background-position:-20px -120px;}
+.e133{background-position:-40px -120px;}
+.e134{background-position:-60px -120px;}
+.e135{background-position:-80px -120px;}
+.e136{background-position:-100px -120px;}
+.e137{background-position:-120px -120px;}
+.e138{background-position:-140px -120px;}
+.e139{background-position:-160px -120px;}
+.e13a{background-position:-180px -120px;}
+.e13b{background-position:-200px -120px;}
+.e13c{background-position:-220px -120px;}
+.e13d{background-position:-240px -120px;}
+.e13e{background-position:-260px -120px;}
+.e13f{background-position:-280px -120px;}
+.e140{background-position:-300px -120px;}
+.e141{background-position:-320px -120px;}
+.e142{background-position:-340px -120px;}
+.e144{background-position:-360px -120px;}
+.e145{background-position:-380px -120px;}
+.e146{background-position:-0px -140px;}
+.e147{background-position:-20px -140px;}
+.e148{background-position:-40px -140px;}
+.e14b{background-position:-60px -140px;}
+.e14c{background-position:-80px -140px;}
+.e14d{background-position:-100px -140px;}
+.e14e{background-position:-120px -140px;}
+.e150{background-position:-140px -140px;}
+.e151{background-position:-160px -140px;}
+.e152{background-position:-180px -140px;}
+.e153{background-position:-200px -140px;}
+.e154{background-position:-220px -140px;}
+.e155{background-position:-240px -140px;}
+.e156{background-position:-260px -140px;}
+.e157{background-position:-280px -140px;}
+.e158{background-position:-300px -140px;}
+.e159{background-position:-320px -140px;}
+.e15a{background-position:-340px -140px;}
+.e201{background-position:-360px -140px;}
+.e202{background-position:-380px -140px;}
+.e204{background-position:-0px -160px;}
+.e207{background-position:-20px -160px;}
+.e209{background-position:-40px -160px;}
+.e20c{background-position:-60px -160px;}
+.e20d{background-position:-80px -160px;}
+.e20e{background-position:-100px -160px;}
+.e20f{background-position:-120px -160px;}
+.e210{background-position:-140px -160px;}
+.e212{background-position:-160px -160px;}
+.e213{background-position:-180px -160px;}
+.e214{background-position:-200px -160px;}
+.e21c{background-position:-220px -160px;}
+.e21d{background-position:-240px -160px;}
+.e21e{background-position:-260px -160px;}
+.e21f{background-position:-280px -160px;}
+.e220{background-position:-300px -160px;}
+.e221{background-position:-320px -160px;}
+.e222{background-position:-340px -160px;}
+.e223{background-position:-360px -160px;}
+.e224{background-position:-380px -160px;}
+.e225{background-position:-0px -180px;}
+.e229{background-position:-20px -180px;}
+.e22e{background-position:-40px -180px;}
+.e22f{background-position:-60px -180px;}
+.e230{background-position:-80px -180px;}
+.e231{background-position:-100px -180px;}
+.e23f{background-position:-120px -180px;}
+.e240{background-position:-140px -180px;}
+.e241{background-position:-160px -180px;}
+.e242{background-position:-180px -180px;}
+.e243{background-position:-200px -180px;}
+.e244{background-position:-220px -180px;}
+.e245{background-position:-240px -180px;}
+.e246{background-position:-260px -180px;}
+.e247{background-position:-280px -180px;}
+.e248{background-position:-300px -180px;}
+.e249{background-position:-320px -180px;}
+.e24a{background-position:-340px -180px;}
+.e24b{background-position:-360px -180px;}
+.e24c{background-position:-380px -180px;}
+.e24d{background-position:-0px -200px;}
+.e24e{background-position:-20px -200px;}
+.e24f{background-position:-40px -200px;}
+.e252{background-position:-60px -200px;}
+.e253{background-position:-80px -200px;}
+.e301{background-position:-100px -200px;}
+.e302{background-position:-120px -200px;}
+.e303{background-position:-140px -200px;}
+.e304{background-position:-160px -200px;}
+.e305{background-position:-180px -200px;}
+.e306{background-position:-200px -200px;}
+.e307{background-position:-220px -200px;}
+.e308{background-position:-240px -200px;}
+.e30a{background-position:-260px -200px;}
+.e30b{background-position:-280px -200px;}
+.e30c{background-position:-300px -200px;}
+.e30e{background-position:-320px -200px;}
+.e30f{background-position:-340px -200px;}
+.e310{background-position:-360px -200px;}
+.e311{background-position:-380px -200px;}
+.e312{background-position:-0px -220px;}
+.e313{background-position:-20px -220px;}
+.e314{background-position:-40px -220px;}
+.e316{background-position:-60px -220px;}
+.e317{background-position:-80px -220px;}
+.e318{background-position:-100px -220px;}
+.e319{background-position:-120px -220px;}
+.e31a{background-position:-140px -220px;}
+.e31b{background-position:-160px -220px;}
+.e31c{background-position:-180px -220px;}
+.e31d{background-position:-200px -220px;}
+.e31e{background-position:-220px -220px;}
+.e31f{background-position:-240px -220px;}
+.e320{background-position:-260px -220px;}
+.e321{background-position:-280px -220px;}
+.e322{background-position:-300px -220px;}
+.e323{background-position:-320px -220px;}
+.e324{background-position:-340px -220px;}
+.e325{background-position:-360px -220px;}
+.e326{background-position:-380px -220px;}
+.e327{background-position:-0px -240px;}
+.e328{background-position:-20px -240px;}
+.e329{background-position:-40px -240px;}
+.e32a{background-position:-60px -240px;}
+.e32b{background-position:-80px -240px;}
+.e32c{background-position:-100px -240px;}
+.e32d{background-position:-120px -240px;}
+.e32e{background-position:-140px -240px;}
+.e330{background-position:-160px -240px;}
+.e331{background-position:-180px -240px;}
+.e332{background-position:-200px -240px;}
+.e333{background-position:-220px -240px;}
+.e335{background-position:-240px -240px;}
+.e338{background-position:-260px -240px;}
+.e339{background-position:-280px -240px;}
+.e33a{background-position:-300px -240px;}
+.e33b{background-position:-320px -240px;}
+.e33c{background-position:-340px -240px;}
+.e33d{background-position:-360px -240px;}
+.e33e{background-position:-380px -240px;}
+.e33f{background-position:-0px -260px;}
+.e340{background-position:-20px -260px;}
+.e341{background-position:-40px -260px;}
+.e342{background-position:-60px -260px;}
+.e343{background-position:-80px -260px;}
+.e344{background-position:-100px -260px;}
+.e345{background-position:-120px -260px;}
+.e346{background-position:-140px -260px;}
+.e347{background-position:-160px -260px;}
+.e348{background-position:-180px -260px;}
+.e349{background-position:-200px -260px;}
+.e34a{background-position:-220px -260px;}
+.e34b{background-position:-240px -260px;}
+.e34c{background-position:-260px -260px;}
+.e34d{background-position:-280px -260px;}
+.e401{background-position:-300px -260px;}
+.e402{background-position:-320px -260px;}
+.e403{background-position:-340px -260px;}
+.e404{background-position:-360px -260px;}
+.e405{background-position:-380px -260px;}
+.e406{background-position:-0px -280px;}
+.e407{background-position:-20px -280px;}
+.e408{background-position:-40px -280px;}
+.e409{background-position:-60px -280px;}
+.e40a{background-position:-80px -280px;}
+.e40b{background-position:-100px -280px;}
+.e40c{background-position:-120px -280px;}
+.e40d{background-position:-140px -280px;}
+.e40e{background-position:-160px -280px;}
+.e40f{background-position:-180px -280px;}
+.e410{background-position:-200px -280px;}
+.e411{background-position:-220px -280px;}
+.e412{background-position:-240px -280px;}
+.e413{background-position:-260px -280px;}
+.e414{background-position:-280px -280px;}
+.e415{background-position:-300px -280px;}
+.e416{background-position:-320px -280px;}
+.e417{background-position:-340px -280px;}
+.e418{background-position:-360px -280px;}
+.e419{background-position:-380px -280px;}
+.e41a{background-position:-0px -300px;}
+.e41b{background-position:-20px -300px;}
+.e41c{background-position:-40px -300px;}
+.e41e{background-position:-60px -300px;}
+.e420{background-position:-80px -300px;}
+.e421{background-position:-100px -300px;}
+.e422{background-position:-120px -300px;}
+.e423{background-position:-140px -300px;}
+.e424{background-position:-160px -300px;}
+.e425{background-position:-180px -300px;}
+.e426{background-position:-200px -300px;}
+.e427{background-position:-220px -300px;}
+.e428{background-position:-240px -300px;}
+.e429{background-position:-260px -300px;}
+.e42a{background-position:-280px -300px;}
+.e42b{background-position:-300px -300px;}
+.e42c{background-position:-320px -300px;}
+.e42d{background-position:-340px -300px;}
+.e42e{background-position:-360px -300px;}
+.e42f{background-position:-380px -300px;}
+.e430{background-position:-0px -320px;}
+.e431{background-position:-20px -320px;}
+.e432{background-position:-40px -320px;}
+.e433{background-position:-60px -320px;}
+.e434{background-position:-80px -320px;}
+.e436{background-position:-100px -320px;}
+.e437{background-position:-120px -320px;}
+.e43a{background-position:-140px -320px;}
+.e43b{background-position:-160px -320px;}
+.e43c{background-position:-180px -320px;}
+.e43d{background-position:-200px -320px;}
+.e43e{background-position:-220px -320px;}
+.e43f{background-position:-240px -320px;}
+.e440{background-position:-260px -320px;}
+.e441{background-position:-280px -320px;}
+.e442{background-position:-300px -320px;}
+.e443{background-position:-320px -320px;}
+.e444{background-position:-340px -320px;}
+.e445{background-position:-360px -320px;}
+.e447{background-position:-380px -320px;}
+.e448{background-position:-0px -340px;}
+.e449{background-position:-20px -340px;}
+.e44a{background-position:-40px -340px;}
+.e44b{background-position:-60px -340px;}
+.e44c{background-position:-80px -340px;}
+.e501{background-position:-100px -340px;}
+.e502{background-position:-120px -340px;}
+.e503{background-position:-140px -340px;}
+.e504{background-position:-160px -340px;}
+.e505{background-position:-180px -340px;}
+.e506{background-position:-200px -340px;}
+.e507{background-position:-220px -340px;}
+.e508{background-position:-240px -340px;}
+.e515{background-position:-260px -340px;}
+.e516{background-position:-280px -340px;}
+.e517{background-position:-300px -340px;}
+.e518{background-position:-320px -340px;}
+.e519{background-position:-340px -340px;}
+.e51b{background-position:-360px -340px;}
+.e51c{background-position:-380px -340px;}
+.e51e{background-position:-0px -360px;}
+.e51f{background-position:-20px -360px;}
+.e520{background-position:-40px -360px;}
+.e521{background-position:-60px -360px;}
+.e522{background-position:-80px -360px;}
+.e523{background-position:-100px -360px;}
+.e524{background-position:-120px -360px;}
+.e525{background-position:-140px -360px;}
+.e526{background-position:-160px -360px;}
+.e527{background-position:-180px -360px;}
+.e528{background-position:-200px -360px;}
+.e529{background-position:-220px -360px;}
+.e52a{background-position:-240px -360px;}
+.e52b{background-position:-260px -360px;}
+.e52c{background-position:-280px -360px;}
+.e52d{background-position:-300px -360px;}
+.e52e{background-position:-320px -360px;}
+.e52f{background-position:-340px -360px;}
+.e530{background-position:-360px -360px;}
+.e531{background-position:-380px -360px;}
+.e536{background-position:-0px -380px;}
+.e537{background-position:-20px -380px;}
+
+.fad{background-position:0 0px;}
+
+.fae{background-position:0 -11px;}.faf{background-position:0 -22px;}.fag{background-position:0 -33px;}.fai{background-position:0 -44px;}.fal{background-position:0 -55px;}.fam{background-position:0 -66px;}.fan{background-position:0 -77px;}.fao{background-position:0 -88px;}.far{background-position:0 -99px;}.fas{background-position:0 -110px;}.fat{background-position:0 -121px;}.fau{background-position:0 -132px;}.faw{background-position:0 -143px;}.fax{background-position:0 -154px;}.faz{background-position:0 -165px;}.fba{background-position:0 -176px;}.fbb{background-position:0 -187px;}.fbd{background-position:0 -198px;}.fbe{background-position:0 -209px;}.fbf{background-position:0 -220px;}.fbg{background-position:0 -231px;}.fbh{background-position:0 -242px;}.fbi{background-position:0 -253px;}.fbj{background-position:0 -264px;}.fbm{background-position:0 -275px;}.fbn{background-position:0 -286px;}.fbo{background-position:0 -297px;}.fbr{background-position:0 -308px;}.fbs{background-position:0 -319px;}.fbt{background-position:0 -330px;}.fbv{background-position:0 -341px;}.fbw{background-position:0 -352px;}.fby{background-position:0 -363px;}.fbz{background-position:0 -374px;}.fca{background-position:0 -385px;}.fcc{background-position:0 -396px;}.fcd{background-position:0 -407px;}.fcf{background-position:0 -418px;}.fcg{background-position:0 -429px;}.fch{background-position:0 -440px;}.fci{background-position:0 -451px;}.fck{background-position:0 -462px;}.fcl{background-position:0 -473px;}.fcm{background-position:0 -484px;}.fcn{background-position:0 -495px;}.fco{background-position:0 -506px;}.fcr{background-position:0 -517px;}.fcu{background-position:0 -528px;}.fcv{background-position:0 -539px;}.fcx{background-position:0 -550px;}.fcy{background-position:0 -561px;}.fcz{background-position:0 -572px;}.fde{background-position:0 -583px;}.fdj{background-position:0 -594px;}.fdk{background-position:0 -605px;}.fdm{background-position:0 -616px;}.fdo{background-position:0 -627px;}.fdz{background-position:0 -638px;}.fec{background-position:0 -649px;}.fee{background-position:0 -660px;}.feg{background-position:0 -671px;}.feh{background-position:0 -682px;}.fer{background-position:0 -693px;}.fes{background-position:0 -704px;}.fet{background-position:0 -715px;}.ffi{background-position:0 -726px;}.ffj{background-position:0 -737px;}.ffk{background-position:0 -748px;}.ffm{background-position:0 -759px;}.ffo{background-position:0 -770px;}.ffr{background-position:0 -781px;}.fga{background-position:0 -792px;}.fgb{background-position:0 -803px;}.fgd{background-position:0 -814px;}.fge{background-position:0 -825px;}.fgf{background-position:0 -836px;}.fgh{background-position:0 -847px;}.fgi{background-position:0 -858px;}.fgl{background-position:0 -869px;}.fgm{background-position:0 -880px;}.fgn{background-position:0 -891px;}.fgp{background-position:0 -902px;}.fgq{background-position:0 -913px;}.fgr{background-position:0 -924px;}.fgs{background-position:0 -935px;}.fgt{background-position:0 -946px;}.fgu{background-position:0 -957px;}.fgw{background-position:0 -968px;}.fgy{background-position:0 -979px;}.fhk{background-position:0 -990px;}.fhm{background-position:0 -1001px;}.fhn{background-position:0 -1012px;}.fhr{background-position:0 -1023px;}.fht{background-position:0 -1034px;}.fhu{background-position:0 -1045px;}.fid{background-position:0 -1056px;}.fie{background-position:0 -1067px;}.fil{background-position:0 -1078px;}.fin{background-position:0 -1089px;}.fio{background-position:0 -1100px;}.fiq{background-position:0 -1111px;}.fir{background-position:0 -1122px;}.fis{background-position:0 -1133px;}.fit{background-position:0 -1144px;}.fjm{background-position:0 -1155px;}.fjo{background-position:0 -1166px;}.fjp{background-position:0 -1177px;}.fke{background-position:0 -1188px;}.fkg{background-position:0 -1199px;}.fkh{background-position:0 -1210px;}.fki{background-position:0 -1221px;}.fkm{background-position:0 -1232px;}.fkn{background-position:0 -1243px;}.fkp{background-position:0 -1254px;}.fkr{background-position:0 -1265px;}.fkw{background-position:0 -1276px;}.fky{background-position:0 -1287px;}.fkz{background-position:0 -1298px;}.fla{background-position:0 -1309px;}.flb{background-position:0 -1320px;}.flc{background-position:0 -1331px;}.fli{background-position:0 -1342px;}.flk{background-position:0 -1353px;}.flr{background-position:0 -1364px;}.fls{background-position:0 -1375px;}.flt{background-position:0 -1386px;}.flu{background-position:0 -1397px;}.flv{background-position:0 -1408px;}.fly{background-position:0 -1419px;}.fma{background-position:0 -1430px;}.fmc{background-position:0 -1441px;}.fmd{background-position:0 -1452px;}.fme{background-position:0 -1463px;}.fmg{background-position:0 -1474px;}.fmh{background-position:0 -1485px;}.fmk{background-position:0 -1496px;}.fml{background-position:0 -1507px;}.fmm{background-position:0 -1518px;}.fmn{background-position:0 -1529px;}.fmo{background-position:0 -1540px;}.fmp{background-position:0 -1551px;}.fmq{background-position:0 -1562px;}.fmr{background-position:0 -1573px;}.fms{background-position:0 -1584px;}.fmt{background-position:0 -1595px;}.fmu{background-position:0 -1606px;}.fmv{background-position:0 -1617px;}.fmw{background-position:0 -1628px;}.fmx{background-position:0 -1639px;}.fmy{background-position:0 -1650px;}.fmz{background-position:0 -1661px;}.fna{background-position:0 -1672px;}.fnc{background-position:0 -1683px;}.fne{background-position:0 -1694px;}.fnf{background-position:0 -1705px;}.fng{background-position:0 -1716px;}.fni{background-position:0 -1727px;}.fnl{background-position:0 -1738px;}.fno{background-position:0 -1749px;}.fnp{background-position:0 -1760px;}.fnr{background-position:0 -1771px;}.fnu{background-position:0 -1782px;}.fnz{background-position:0 -1793px;}.fom{background-position:0 -1804px;}.fpa{background-position:0 -1815px;}.fpe{background-position:0 -1826px;}.fpf{background-position:0 -1837px;}.fpg{background-position:0 -1848px;}.fph{background-position:0 -1859px;}.fpk{background-position:0 -1870px;}.fpl{background-position:0 -1881px;}.fpm{background-position:0 -1892px;}.fpn{background-position:0 -1903px;}.fpr{background-position:0 -1914px;}.fps{background-position:0 -1925px;}.fpt{background-position:0 -1936px;}.fpw{background-position:0 -1947px;}.fpy{background-position:0 -1958px;}.fqa{background-position:0 -1969px;}.fre{background-position:0 -1980px;}.fro{background-position:0 -1991px;}.frs{background-position:0 -2002px;}.fru{background-position:0 -2013px;}.frw{background-position:0 -2024px;}.fsa{background-position:0 -2035px;}.fsb{background-position:0 -2046px;}.fsc{background-position:0 -2057px;}.fsd{background-position:0 -2068px;}.fse{background-position:0 -2079px;}.fsg{background-position:0 -2090px;}.fsh{background-position:0 -2101px;}.fsi{background-position:0 -2112px;}.fsj{background-position:0 -2123px;}.fsk{background-position:0 -2134px;}.fsl{background-position:0 -2145px;}.fsm{background-position:0 -2156px;}.fsn{background-position:0 -2167px;}.fso{background-position:0 -2178px;}.fsr{background-position:0 -2189px;}.fst{background-position:0 -2200px;}.fsv{background-position:0 -2211px;}.fsy{background-position:0 -2222px;}.fsz{background-position:0 -2233px;}.ftc{background-position:0 -2244px;}.ftd{background-position:0 -2255px;}.ftf{background-position:0 -2266px;}.ftg{background-position:0 -2277px;}.fth{background-position:0 -2288px;}.ftj{background-position:0 -2299px;}.ftk{background-position:0 -2310px;}.ftl{background-position:0 -2321px;}.ftm{background-position:0 -2332px;}.ftn{background-position:0 -2343px;}.fto{background-position:0 -2354px;}.ftr{background-position:0 -2365px;}.ftt{background-position:0 -2376px;}.ftv{background-position:0 -2387px;}.ftw{background-position:0 -2398px;}.ftz{background-position:0 -2409px;}.fua{background-position:0 -2420px;}.fug{background-position:0 -2431px;}.fum{background-position:0 -2442px;}.fus{background-position:0 -2453px;}.fuy{background-position:0 -2464px;}.fuz{background-position:0 -2475px;}.fva{background-position:0 -2486px;}.fvc{background-position:0 -2497px;}.fve{background-position:0 -2508px;}.fvg{background-position:0 -2519px;}.fvi{background-position:0 -2530px;}.fvn{background-position:0 -2541px;}.fvu{background-position:0 -2552px;}.fwf{background-position:0 -2563px;}.fws{background-position:0 -2574px;}.fye{background-position:0 -2585px;}.fyt{background-position:0Px -2596px;}.fza{background-position:0 -2607px;}.fzm{background-position:0 -2618px;}.fzw{background-position:0 -2629px;}
+
+
+</style>
+</head>
+<body>
+    
+<table border="1" >
+ 
+   <tr>
+    <th>New?</th>
+    <th>Category</th>
+    <th>Image</th>
+    <th>Emote</th>
+  </tr>
+
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/angel.gif></img></td><td> = angel</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/agree.gif></img></td><td> = agree</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/alienbanana.gif></img></td><td> = area51</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/bacondance.gif></img></td><td> = bacondance</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/banana.gif></img></td><td> = banana</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/banghead.gif></img></td><td> = banghead</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/banned.gif></img></td><td> = banned</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/bighug.gif></img></td><td> = bighug</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/blahblah.gif></img></td><td> = blahblah</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/bolt.gif></img></td><td> = bolt</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/bowdown.gif></img></td><td> = bowdown</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/bsflag.gif></img></td><td> = bsflag</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/burn.gif></img></td><td> = burn</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/cat.gif></img></td><td> = cat</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/cheer.gif></img></td><td> = cheer</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/cries.gif></img></td><td> = cries</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/cube.gif></img></td><td> = cube</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/cylon.gif></img></td><td> = cylon</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/dance.gif></img></td><td> = dance</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/deal.gif></img></td><td> = deal</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/deadhorse.gif></img></td><td> = deadhorse</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/dog.gif></img></td><td> = dog</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/dramaqueen.gif></img></td><td> = dramaqueen</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/drool.gif></img></td><td> = drool</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/duel.gif></img></td><td> = duel</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/duh.gif></img></td><td> = duh</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/evilbanana.gif></img></td><td> = evilbanana</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/eyebrow.gif></img></td><td> = eyebrow</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/eyeroll.gif></img></td><td> = eyeroll</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/excited.gif></img></td><td> = excited</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/facepalm.gif></img></td><td> = facepalm</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/fishslap.gif></img></td><td> = fishslap</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/flirty.gif></img></td><td> = flirty</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/friendkiss.gif></img></td><td> = friendkiss</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/goodluck.gif></img></td><td> = goodluck</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/haha.gif></img></td><td> = haha</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/happy.gif></img></td><td> = happy</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/hug.gif></img></td><td> = hug</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/heart.gif></img></td><td> = heart</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/headspin.gif></img></td><td> = headspin</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/hysterics.gif></img></td><td> = hysterics</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/highfive.gif></img></td><td> = highfive</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/hides.gif></img></td><td> = hides</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/laugh.gif></img></td><td> = laugh</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/lmfao.gif></img></td><td> = lmfao</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/love.gif></img></td><td> = love</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/madbeating.gif></img></td><td> = madbeating</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/mangapunksai.gif></img></td><td> = mangapunksai</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/ninja.gif></img></td><td> = ninja</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/ohnoes.gif></img></td><td> = ohnoes</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/openarms.gif></img></td><td> = openarms</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/flipout.gif></img></td><td> = outrage</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/panic.gif></img></td><td> = panic</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/party.gif></img></td><td> = party</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/pickledance.gif></img></td><td> = pickledance</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/poke.gif></img></td><td> = poke</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/praying.gif></img></td><td> = pray</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/puke.gif></img></td><td> = puke</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/rant.gif></img></td><td> = rant</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/rage.gif></img></td><td> = rage</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/headbanging.gif></img></td><td> = rock</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/rofl.gif></img></td><td> = rofl</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/sadwave.gif></img></td><td> = sadwave</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/shakeshead.gif></img></td><td> = shakeshead</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/shrug.gif></img></td><td> = shrug</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/slapfight.gif></img></td><td> = slapfight</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/smokin.gif></img></td><td> = smokin</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/stolenkiss.gif></img></td><td> = stolenkiss</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/strong.gif></img></td><td> = strong</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/toast.gif></img></td><td> = toast</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/twitch.gif></img></td><td> = twitch</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/welcome.gif></img></td><td> = welcome</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/whistle.gif></img></td><td> = whistle</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/woohoo.gif></img></td><td> = woohoo</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/wookie.gif></img></td><td> = wookie</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/worship.gif></img></td><td> = worship</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/yawn.gif></img></td><td> = yawn</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/lightsaberduel.gif></img></td><td> = lightsaberduel</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/howl.gif></img></td><td> = howl</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/broken.gif></img></td><td> = broken</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/dramacorn.gif></img></td><td> = dramacorn</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/flowers.gif></img></td><td> = flowers</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/happywave.gif></img></td><td> = happywave</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/inlove.gif></img></td><td> = inlove</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/rose.gif></img></td><td> = rose</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/dontlaugh.gif></img></td><td> = snicker</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/kitty.gif></img></td><td> = treasure</td></tr>
+<tr><td></td><td>Animated Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/tux.gif></img></td><td> = tux</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e436"></i></td><td> = bamboo</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e209"></i></td><td> = beginner</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e13f"></i></td><td> = bath</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e325"></i></td><td> = bell</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e10f"></i></td><td> = bulb</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e426"></i></td><td> = bow</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e311"></i></td><td> = bomb</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e443"></i></td><td> = cyclone</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e008"></i></td><td> = camera</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e30e"></i></td><td> = cigarette</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e04e"></i></td><td> = cherub</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e442"></i></td><td> = chime</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e301"></i></td><td> = clipboard</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e02d"></i></td><td> = clock</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e049"></i></td><td> = cloud</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e00c"></i></td><td> = computer</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e04c"></i></td><td> = crescent</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e10e"></i></td><td> = crown</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e330"></i></td><td> = dash</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e035"></i></td><td> = diamond</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e331"></i></td><td> = drip</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e05a"></i></td><td> = dung</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e146"></i></td><td> = dusk</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e103"></i></td><td> = email</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e00b"></i></td><td> = fax</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e11d"></i></td><td> = fire</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e121"></i></td><td> = fountain</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e116"></i></td><td> = hammer</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e317"></i></td><td> = horn</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e11a"></i></td><td> = imp</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e03f"></i></td><td> = key</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e321"></i></td><td> = kimono</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e03f"></i></td><td> = key</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e144"></i></td><td> = lock</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e144"></i></td><td> = lock</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e34c"></i></td><td> = lunchbox</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e101"></i></td><td> = mailbox</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e03d"></i></td><td> = movies</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e324"></i></td><td> = movie</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e00a"></i></td><td> = mobile</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e142"></i></td><td>megaphone</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e114"></i></td><td> = magnifying_glass</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e148"></i></td><td> = notebook</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e30f"></i></td><td> = pill</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e113"></i></td><td> = pistol</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e102"></i></td><td> = postbox</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e433"></i></td><td> = rollercoaster</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e43a"></i></td><td> = satchel</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e43b"></i></td><td> = streamer</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e14b"></i></td><td> = satellite</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e145"></i></td><td> = unlock</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e11f"></i></td><td> = seat</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e313"></i></td><td> = scissors</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e12b"></i></td><td> = spaceinvader</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e441"></i></td><td> = shell</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e13b"></i></td><td> = syringe</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e12a"></i></td><td> = television</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e009"></i></td><td> = telephone</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e122"></i></td><td> = tent</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e125"></i></td><td> = ticket</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e140"></i></td><td> = toilet</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e031"></i></td><td> = trident</td></tr>
+<tr><td>(New)</td><td>Standard Emote Dictionary</td><td><i class="emoji e13c"></i></td><td> = zzz</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e502"></i></td><td> = art</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e322"></i></td><td> = bikini</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e11e"></i></td><td> = briefcase</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e51f"></i></td><td> = dancer</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e407"></i></td><td> = dizzy</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e528"></i></td><td> = monkey</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e24d"></i></td><td> = ok</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e151"></i></td><td> = restroom</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e42f"></i></td><td> = truck</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e213"></i></td><td> = up</td></tr>
+<tr><td></td><td>Standard Emote Dictionary</td><td><i class="emoji e12e"></i></td><td> = vs</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e154"></i></td><td> = atm</td></tr>
+<tr><td>(New)</td><td>Signs</td><td><i class="emoji e214"></i></td><td> = cool</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e507"></i></td><td> = cinema</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e24e"></i></td><td> = copyright</td></tr>
+<tr><td>(New)</td><td>Signs</td><td><i class="emoji e229"></i></td><td> = id</td></tr>
+<tr><td>(New)</td><td>Signs</td><td><i class="emoji e424"></i></td><td> = ok_gesture</td></tr>
+<tr><td>(New)</td><td>Signs</td><td><i class="emoji e24c"></i></td><td> = top</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e537"></i></td><td> = tm</td></tr>
+<tr><td>(New)</td><td>Signs</td><td><i class="emoji e207"></i></td><td> = underage</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e24f"></i></td><td> = registered</td></tr>
+<tr><td>(New)</td><td>Signs</td><td><i class="emoji e252"></i></td><td> = warning</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e139"></i></td><td> = women</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e138"></i></td><td> = man</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e212"></i></td><td> = new</td></tr>
+<tr><td></td><td>Signs</td><td><i class="emoji e13a"></i></td><td> = baby</td></tr>
+<tr><td>(New)</td><td>Signs</td><td><i class="emoji e333"></i></td><td> = x</td></tr>
+<tr><td>(New)</td><td>Signs</td><td><i class="emoji e332"></i></td><td> = o</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/cool.gif></img></td><td> = :s with a capital s</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><img src=https://wireclub-a.akamaihd.net/content/images/emoticons/crook.gif?v=2></img></td><td> = (h) with a capital h</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e416"></i></td><td>: @ with no space</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e413"></i></td><td>: ' ( with no spaces</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e403"></i></td><td>: ( with no space</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e405"></i></td><td>; ) with no space</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e414"></i></td><td>: $ with no space</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e410"></i></td><td>: - O with no spaces</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e404"></i></td><td>: D with no space</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e057"></i></td><td>: ) with no space</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e105"></i></td><td>: P with no space</td></tr>
+<tr><td></td><td>Classic Emote Dictionary</td><td><i class="emoji e40d"></i></td><td>: | with no space</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e248"></i></td><td> = capricorn</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e249"></i></td><td> = aquarius</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e24a"></i></td><td> = pisces</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e23f"></i></td><td> = aries</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e240"></i></td><td> = taurus</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e241"></i></td><td> = gemini</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e242"></i></td><td> = cancer</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e243"></i></td><td> = leo</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e244"></i></td><td> = virgo</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e245"></i></td><td> = libra</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e246"></i></td><td> = scorpius</td></tr>
+<tr><td></td><td>Astrological Signs</td><td><i class="emoji e247"></i></td><td> = sagittarius</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e21c"></i></td><td> = number_1</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e21d"></i></td><td> = number_2</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e21e"></i></td><td> = number_3</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e21f"></i></td><td> = number_4</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e220"></i></td><td> = number_5</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e221"></i></td><td> = number_6</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e222"></i></td><td> = number_7</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e223"></i></td><td> = number_8</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e224"></i></td><td> = number_9</td></tr>
+<tr><td>(New)</td><td>Numbers</td><td><i class="emoji e225"></i></td><td> = number_0</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e059"></i></td><td> = angry</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e108"></i></td><td> = angst</td></tr>
+<tr><td></td><td>Faces</td><td><img width=20 height=20 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/ashamed.gif?v=2"></td><td> = ashamed</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e418"></i></td><td> = blow_kiss</td></tr>
+<tr><td></td><td>Faces</td><td><img width=16 height=16 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/biggrin.gif?v=2"></td><td> = biggrin</td></tr>
+<tr><td></td><td>Faces</td><td><img width=26 height=24 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/bigeyes.gif?v=2"></td><td> = bigeyes</td></tr>
+<tr><td></td><td>Faces</td><td><img width=16 height=21 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/confused.gif?v=2"></td><td> = confused</td></tr>
+<tr><td></td><td>Faces</td><td><img width=30 height=17 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/cupid.gif?v=2"></td><td> = cupid</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e04f"></i></td><td> = cat_face</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e052"></i></td><td> = dog_face</td></tr>
+<tr><td></td><td>Faces</td><td><img width=20 height=20 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/doh.gif?v=2"></td><td> = doh</td></tr>
+<tr><td></td><td>Faces</td><td><img width=29 height=23 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/drunk.gif?v=2"></td><td> = drunk</td></tr>
+<tr><td></td><td>Faces</td><td><i class="emoji e41b"></i></td><td> = ear</td></tr>
+<tr><td></td><td>Faces</td><td><img width=21 height=19 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/devil.gif?v=2"></td><td> = devil</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e058"></i></td><td> = disappointed</td></tr>
+<tr><td></td><td>Faces</td><td><img width=16 height=16 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/redface.gif?v=2"></td><td> = embarrassed</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e106"></i></td><td> = enamored</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e40f"></i></td><td> = exasperated</td></tr>
+<tr><td></td><td>Faces</td><td><i class="emoji e419"></i></td><td> = eyes</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e40e"></i></td><td> = expressionless</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e40b"></i></td><td> = fearful</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e003"></i></td><td> = lips</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e412"></i></td><td> = lmao</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e401"></i></td><td> = nervous</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e109"></i></td><td> = monkey_face</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e40c"></i></td><td> = mask</td></tr>
+<tr><td></td><td>Faces</td><td><i class="emoji e41c"></i></td><td> = mouth</td></tr>
+<tr><td></td><td>Faces</td><td><i class="emoji e41a"></i></td><td> = nose</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e40a"></i></td><td> = relieved</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e107"></i></td><td> = scream</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e402"></i></td><td> = smirk</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e415"></i></td><td> = smile</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e417"></i></td><td> = smooch</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e411"></i></td><td> = tantrum</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e421"></i></td><td> = thumbs_down</td></tr>
+<tr><td></td><td>Faces</td><td><img width=31 height=15 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/thumbsup.gif?v=2"></td><td> = thumbsup</td></tr>
+<tr><td>(New)</td><td>Faces</td><td><i class="emoji e406"></i></td><td> = tired</td></tr>
+<tr><td></td><td>Faces</td><td><i class="emoji e409"></i></td><td> = tongue</td></tr>
+<tr><td></td><td>Faces</td><td><img width=16 height=16 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/tongue2.gif?v=2"></td><td> = tongue2</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e426"></i></td><td> = bow</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e010"></i></td><td> = fist</td></tr>
+<tr><td></td><td>Gestures</td><td><i class="emoji e14c"></i></td><td> = flexed</td></tr>
+<tr><td></td><td>Gestures</td><td><i class="emoji e536"></i></td><td> = footprints</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e012"></i></td><td> = hand</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e427"></i></td><td> = hands_raised</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e41e"></i></td><td> = hands_wave</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e420"></i></td><td> = hands_ok</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e422"></i></td><td> = hands_open</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e424"></i></td><td> = ok_gesture</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e423"></i></td><td> = no_gesture</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e00d"></i></td><td> = punch</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e22e"></i></td><td> = point_up</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e22f"></i></td><td> = point_down</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e231"></i></td><td> = point_right</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e230"></i></td><td> = point_left</td></tr>
+<tr><td>(New)</td><td>Gestures</td><td><i class="emoji e00f"></i></td><td> = point</td></tr>
+<tr><td></td><td>Gestures</td><td><i class="emoji e011"></i></td><td>victory</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e521"></i></td><td> = bird</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e52f"></i></td><td> = boar</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e525"></i></td><td> = bug</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e429"></i></td><td>bunny_ears</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e051"></i></td><td> = bear</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e523"></i></td><td> = chick</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e52e"></i></td><td> = chicken</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e530"></i></td><td> = camel</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e52b"></i></td><td> = cow</td></tr>
+<tr><td></td><td>Animals</td><td><img width=25 height=18 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/doberman.gif?v=2"></td><td> = dober</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e520"></i></td><td> = dolphin</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e526"></i></td><td> = elephant</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e019"></i></td><td> = fish</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e531"></i></td><td> = frog</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e01a"></i></td><td> = horse</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e524"></i></td><td> = hamster</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e527"></i></td><td> = koala</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e053"></i></td><td> = mouse</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e10a"></i></td><td> = octopus</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e055"></i></td><td> = penguin</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e052"></i></td><td> = poodle</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e10b"></i></td><td> = pig</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e52c"></i></td><td> = rabbit</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e529"></i></td><td> = sheep</td></tr>
+<tr><td></td><td>Animals</td><td><i class="emoji e52d"></i></td><td> = snake</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e050"></i></td><td> = tiger</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e522"></i></td><td> = tropical_fish</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e054"></i></td><td> = whale</td></tr>
+<tr><td>(New)</td><td>Animals</td><td><i class="emoji e52a"></i></td><td> = wolf</td></tr>
+<tr><td></td><td>Buildings</td><td><i class="emoji e14d"></i></td><td> = bank</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e150"></i></td><td> = bus_stop</td></tr>
+<tr><td></td><td>Buildings</td><td><i class="emoji e037"></i></td><td> = church</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e137"></i></td><td> = construction</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e156"></i></td><td> = convenience_store</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e504"></i></td><td> = department_store</td></tr>
+<tr><td></td><td>Buildings</td><td><i class="emoji e508"></i></td><td> = factory</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e036"></i></td><td> = house</td></tr>
+<tr><td></td><td>Buildings</td><td><i class="emoji e155"></i></td><td> = hospital</td></tr>
+<tr><td></td><td>Buildings</td><td><i class="emoji e158"></i></td><td> = hotel</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e505"></i></td><td> = japanese_castle</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e501"></i></td><td> = love_hote</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e038"></i></td><td> = office</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e153"></i></td><td> = postoffice</td></tr>
+<tr><td></td><td>Buildings</td><td><i class="emoji e157"></i></td><td> = school</td></tr>
+<tr><td></td><td>Buildings</td><td><i class="emoji e039"></i></td><td> = station</td></tr>
+<tr><td>(New)</td><td>Buildings</td><td><i class="emoji e506"></i></td><td>western_castle</td></tr>
+<tr><td></td><td>Buildings</td><td><i class="emoji e43d"></i></td><td> = wedding</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e425"></i></td><td>amour</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e320"></i></td><td> = barber</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e001"></i></td><td> = boy</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e428"></i></td><td> = couple</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e51b"></i></td><td> = construction_worker</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e51f"></i></td><td> = dancer:</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e31e"></i></td><td> = face_massage</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e002"></i></td><td> = girl</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e51e"></i></td><td> = guardsman</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e31f"></i></td><td> = haircut</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e111"></i></td><td> = kiss</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e253"></i></td><td> = information_desk</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e516"></i></td><td> = man_with_gua_pi_mao</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e517"></i></td><td>man_with_turban</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e31d"></i></td><td> = nail_care</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e152"></i></td><td> = officer</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e519"></i></td><td> = older_woman</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e518"></i></td><td> = older_man</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e51c"></i></td><td> = princess</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e201"></i></td><td> = pedestrian</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e115"></i></td><td> = runner</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e017"></i></td><td> = surfer</td></tr>
+<tr><td></td><td>People</td><td><i class="emoji e42d"></i></td><td> = swimmer</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e515"></i></td><td> = western_person</td></tr>
+<tr><td>(New)</td><td>People</td><td><i class="emoji e005"></i></td><td> = woman</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e345"></i></td><td> = apple</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e34a"></i></td><td> = aubergine</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e047"></i></td><td> = beer</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e339"></i></td><td> = bread</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e045"></i></td><td> = cup_coffee</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e338"></i></td><td> = cup_tea</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e33b"></i></td><td>chips</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e30c"></i></td><td> = clink</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e044"></i></td><td> = cocktail</td></tr>
+<tr><td></td><td>Food</td><td><img width=19 height=19 class=emoticon src="https://wireclub-a.akamaihd.net/content/images/emoticons/coffee.png?v=2"></td><td> = coffee</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e147"></i></td><td> = cooking</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e341"></i></td><td> = curry</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e34b"></i></td><td> = cake</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e33c"></i></td><td> = dumpling</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e33b"></i></td><td> = fries</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e43f"></i></td><td> = gelato</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e120"></i></td><td> = hamburger</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e33a"></i></td><td> = icecream</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e340"></i></td><td> = ramen</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e33e"></i></td><td> = rice</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e33d"></i></td><td> = rice_cracker</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e30b"></i></td><td> = sake</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e046"></i></td><td> = shortcake</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e34d"></i></td><td> = soup</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e33f"></i></td><td> = spaghetti</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e347"></i></td><td> = strawberry</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e342"></i></td><td>rice_ball</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e343"></i></td><td> = seafood_casserole</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e344"></i></td><td> = sushi</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e349"></i></td><td> = tomato</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e346"></i></td><td> = tangerine</td></tr>
+<tr><td>(New)</td><td>Food</td><td><i class="emoji e043"></i></td><td> = utensils</td></tr>
+<tr><td></td><td>Food</td><td><i class="emoji e348"></i></td><td> = watermelon</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e01d"></i></td><td> = airplane</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e431"></i></td><td> = ambulance</td></tr>
+<tr><td>(New)</td><td>Vehicles</td><td><i class="emoji e159"></i></td><td> = bus</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e136"></i></td><td> = bicycle</td></tr>
+<tr><td>(New)</td><td>Vehicles</td><td><i class="emoji e01b"></i></td><td> = car</td></tr>
+<tr><td>(New)</td><td>Vehicles</td><td><i class="emoji e430"></i></td><td> = fire_engine</td></tr>
+<tr><td>(New)</td><td>Vehicles</td><td><i class="emoji e03a"></i></td><td> = fuel</td></tr>
+<tr><td>(New)</td><td>Vehicles</td><td><i class="emoji e432"></i></td><td>police_car</td></tr>
+<tr><td>(New)</td><td>Vehicles</td><td><i class="emoji e433"></i></td><td> = rollercoaster</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e10d"></i></td><td> = rocket</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e202"></i></td><td> = ship</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e01c"></i></td><td> = sailboat</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e135"></i></td><td> = speedboat</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e013"></i></td><td> = skiing</td></tr>
+<tr><td>(New)</td><td>Vehicles</td><td><i class="emoji e42e"></i></td><td> = suv</td></tr>
+<tr><td>(New)</td><td>Vehicles</td><td><i class="emoji e15a"></i></td><td> = taxi</td></tr>
+<tr><td></td><td>Vehicles</td><td><i class="emoji e01e"></i></td><td> = train</td></tr>
+<tr><td>(New)</td><td>Clothing</td><td><i class="emoji e318"></i></td><td> = bonnet</td></tr>
+<tr><td></td><td>Clothing</td><td><i class="emoji e319"></i></td><td> = dress</td></tr>
+<tr><td></td><td>Clothing</td><td><i class="emoji e323"></i></td><td> = handbag</td></tr>
+<tr><td>(New)</td><td>Clothing</td><td><i class="emoji e13e"></i></td><td> = heels</td></tr>
+<tr><td></td><td>Clothing</td><td><i class="emoji e31c"></i></td><td> = lipstick</td></tr>
+<tr><td>(New)</td><td>Clothing</td><td><i class="emoji e12f"></i></td><td> = moneybag</td></tr>
+<tr><td></td><td>Clothing</td><td><i class="emoji e302"></i></td><td> = necktie</td></tr>
+<tr><td>(New)</td><td>Clothing</td><td><i class="emoji e04b"></i></td><td> = rain</td></tr>
+<tr><td></td><td>Clothing</td><td><i class="emoji e314"></i></td><td> = ribbon</td></tr>
+<tr><td></td><td>Clothing</td><td><i class="emoji e034"></i></td><td> = ring</td></tr>
+<tr><td>(New)</td><td>Clothing</td><td><i class="emoji e31a"></i></td><td> = sandal</td></tr>
+<tr><td></td><td>Clothing</td><td><i class="emoji e007"></i></td><td> = sneaker</td></tr>
+<tr><td>(New)</td><td>Clothing</td><td><i class="emoji e503"></i></td><td> = tophat</td></tr>
+<tr><td>(New)</td><td>Clothing</td><td><i class="emoji e006"></i></td><td> = tshirt</td></tr>
+<tr><td>(New)</td><td>Clothing</td><td><i class="emoji e43c"></i></td><td> = umbrella</td></tr>
+<tr><td></td><td>Sports and Games</td><td><i class="emoji e016"></i></td><td> = baseball</td></tr>
+<tr><td></td><td>Sports and Games</td><td><i class="emoji e42a"></i></td><td> = basketball</td></tr>
+<tr><td></td><td>Sports and Games</td><td><i class="emoji e42c"></i></td><td> = billiards</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e130"></i></td><td> = darts</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e42b"></i></td><td> = football</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e014"></i></td><td> = golf</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e134"></i></td><td> = horses</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e12d"></i></td><td> = mahjong</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e132"></i></td><td> = racing</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e133"></i></td><td>slots</td></tr>
+<tr><td></td><td>Sports and Games</td><td><i class="emoji e133"></i></td><td> = slot_machine</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e018"></i></td><td> = soccer</td></tr>
+<tr><td></td><td>Sports and Games</td><td><i class="emoji e131"></i></td><td> = trophy</td></tr>
+<tr><td></td><td>Sports and Games</td><td><i class="emoji e015"></i></td><td> = tennis</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e20c"></i></td><td> = heart_suit</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e20e"></i></td><td> = spade_suit</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e20f"></i></td><td> = club_suit</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e20d"></i></td><td> = diamond_suit</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e327"></i></td><td> = heart_sparkle</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e022"></i></td><td> = heart_red</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e32a"></i></td><td> = heart_blue</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e32c"></i></td><td> = heart_yellow</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e32b"></i></td><td> = heart_green</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e328"></i></td><td> = heart_pink</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e32d"></i></td><td> = heart_purple</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e329"></i></td><td> = heart_arrow</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e023"></i></td><td>heart_broken</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e437"></i></td><td>heart_ribbon</td></tr>
+<tr><td>(New)</td><td>Sports and Games</td><td><i class="emoji e204"></i></td><td> = heart_square</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e126"></i></td><td> = cd</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e129"></i></td><td> = cassette</td></tr>
+<tr><td></td><td>Music</td><td><i class="emoji e127"></i></td><td> = dvd</td></tr>
+<tr><td></td><td>Music</td><td><i class="emoji e041"></i></td><td> = guitar</td></tr>
+<tr><td></td><td>Music</td><td><i class="emoji e30a"></i></td><td> = headphone</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e317"></i></td><td> = horn</td></tr>
+<tr><td></td><td>Music</td><td><i class="emoji e03c"></i></td><td> = microphone</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e142"></i></td><td>megaphone</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e316"></i></td><td> = minidisc</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e03e"></i></td><td> = note</td></tr>
+<tr><td></td><td>Music</td><td><i class="emoji e128"></i></td><td> = radio</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e141"></i></td><td>speakers</td></tr>
+<tr><td></td><td>Music</td><td><i class="emoji e040"></i></td><td> = saxophone</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e440"></i></td><td> = sparkler</td></tr>
+<tr><td>(New)</td><td>Music</td><td><i class="emoji e326"></i></td><td> = tunes</td></tr>
+<tr><td></td><td>Music</td><td><i class="emoji e042"></i></td><td> = trumpet</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e310"></i></td><td> = balloon</td></tr>
+<tr><td>(New)</td><td>Holidays</td><td><i class="emoji e033"></i></td><td> = christmastree</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e10c"></i></td><td> = extraterrestrial</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e117"></i></td><td> = fireworks</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e11b"></i></td><td> = ghost</td></tr>
+<tr><td>(New)</td><td>Holidays</td><td><i class="emoji e312"></i></td><td> = hooray</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e445"></i></td><td> = jackolantern</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e112"></i></td><td> = package</td></tr>
+<tr><td>(New)</td><td>Holidays</td><td><i class="emoji e448"></i></td><td> = santa</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e11c"></i></td><td> = skull</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e048"></i></td><td> = snowman</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e32e"></i></td><td> = sparkle</td></tr>
+<tr><td></td><td>Holidays</td><td><i class="emoji e335"></i></td><td> = star</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e119"></i></td><td> = autumnleaves</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e306"></i></td><td> = bouquet</td></tr>
+<tr><td>(New)</td><td>Flowers and Plants</td><td><i class="emoji e436"></i></td><td> = bamboo</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e308"></i></td><td> = cactus</td></tr>
+<tr><td>(New)</td><td>Flowers and Plants</td><td><i class="emoji e030"></i></td><td> = cherry_blossom</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e303"></i></td><td> = hibiscus</td></tr>
+<tr><td>(New)</td><td>Flowers and Plants</td><td><i class="emoji e110"></i></td><td> = herb</td></tr>
+<tr><td>(New)</td><td>Flowers and Plants</td><td><i class="emoji e118"></i></td><td> = maple_leaf</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e307"></i></td><td> = palm</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e032"></i></td><td> = rosebud</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e305"></i></td><td> = sunflower</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e110"></i></td><td> = seedling</td></tr>
+<tr><td></td><td>Flowers and Plants</td><td><i class="emoji e304"></i></td><td> = tulip</td></tr>
+<tr><td>(New)</td><td>Flowers and Plants</td><td><i class="emoji e447"></i></td><td> = windyleaves</td></tr>
+<tr><td>(New)</td><td>Flowers and Plants</td><td><i class="emoji e444"></i></td><td> = wheat</td></tr>
+<tr><td></td><td>Weather</td><td><i class="emoji e049"></i></td><td> = cloud</td></tr>
+<tr><td>(New)</td><td>Weather</td><td><i class="emoji e123"></i></td><td> = hot_springs</td></tr>
+<tr><td>(New)</td><td>Weather</td><td><i class="emoji e13d"></i></td><td> = lightning</td></tr>
+<tr><td>(New)</td><td>Weather</td><td><i class="emoji e04d"></i></td><td> = mountain_sunrise</td></tr>
+<tr><td></td><td>Weather</td><td><i class="emoji e44c"></i></td><td> = rainbow</td></tr>
+<tr><td></td><td>Weather</td><td><i class="emoji e449"></i></td><td> = sunrise</td></tr>
+<tr><td>(New)</td><td>Weather</td><td><i class="emoji e04a"></i></td><td> = sun</td></tr>
+<tr><td>(New)</td><td>Weather</td><td><i class="emoji e44a"></i></td><td> = sunset</td></tr>
+<tr><td>(New)</td><td>Weather</td><td><i class="emoji e44b"></i></td><td> = starry_night</td></tr>
+<tr><td>(New)</td><td>Weather</td><td><i class="emoji e43e"></i></td><td> = waterwave</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fad"></i></td><td>ad = Andorra</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fae"></i></td><td>ae = United Arab Emirates</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag faf"></i></td><td>af = Afghanistan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fag"></i></td><td>ag = Antigua & Barbuda</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fai"></i></td><td>ai = Anguilla</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fal"></i></td><td>al = Albania</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fam"></i></td><td>am = Armenia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fan"></i></td><td>an = Netherlands Antilles</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fao"></i></td><td>ao = Angola</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag far"></i></td><td>ar = Argentina</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fas"></i></td><td>as = American Samoa</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fat"></i></td><td>at = Austria</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fau"></i></td><td>au = Australia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag faw"></i></td><td>aw = Aruba</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag faz"></i></td><td>az = Azerbaijan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fba"></i></td><td>ba = Bosnia and Herzegovina</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbb"></i></td><td>bb = Barbados</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbd"></i></td><td>bd = Bangladesh</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbe"></i></td><td>be = Belgium</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbf"></i></td><td>bf = Burkina Faso</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbg"></i></td><td>bg = Bulgaria</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbh"></i></td><td>bh = Bahrain</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbi"></i></td><td>bi = Burundi</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbj"></i></td><td>bj = Benin</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbm"></i></td><td>bm = Bermuda</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbn"></i></td><td>bn = Brunei Darussalam</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbo"></i></td><td>bo = Bolivia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbr"></i></td><td>br = Brazil</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbs"></i></td><td>bs = Bahama</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbt"></i></td><td>bt = Bhutan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbv"></i></td><td>bv = Bouvet Island</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbw"></i></td><td>bw = Botswana</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fby"></i></td><td>by = Belarus</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fbz"></i></td><td>bz = Belize</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fca"></i></td><td>ca = Canada</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcc"></i></td><td>cc = Cocos (Keeling) Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="emoji e126"></i></td><td>cd = Democratic Republic of the Congo</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcf"></i></td><td>cf = Central African Republic</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcg"></i></td><td>cg = Congo</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fch"></i></td><td>ch = Switzerland</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fci"></i></td><td>ci = Côte D'ivoire (Ivory Coast)</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fck"></i></td><td>ck = Cook Iislands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcl"></i></td><td>cl = Chile</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcm"></i></td><td>cm = Cameroon</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcn"></i></td><td>cn = China</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fco"></i></td><td>co = Colombia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcr"></i></td><td>cr = Costa Rica</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcu"></i></td><td>cu = Cuba</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcv"></i></td><td>cv = Cape Verde</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcx"></i></td><td>cx = Christmas Island</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcy"></i></td><td>cy = Cyprus</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fcz"></i></td><td>cz = Czech Republic</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fde"></i></td><td>de = Germany</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fdj"></i></td><td>dj = Djibouti</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fdk"></i></td><td>dk = Denmark</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fdm"></i></td><td>dm = Dominica</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fdo"></i></td><td>do = Dominican Republic</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fdz"></i></td><td>dz = Algeria</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fec"></i></td><td>ec = Ecuador</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fee"></i></td><td>ee = Estonia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag feg"></i></td><td>eg = Egypt</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag feh"></i></td><td>eh = Western Sahara</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fer"></i></td><td>er = Eritrea</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fes"></i></td><td>es = Spain</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fet"></i></td><td>et = Ethiopia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ffi"></i></td><td>fi = Finland</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ffj"></i></td><td>fj = Fiji</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ffk"></i></td><td>fk = Falkland Islands (Malvinas)</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ffm"></i></td><td>fm = Micronesia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ffo"></i></td><td>fo = Faroe Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ffr"></i></td><td>fr = France</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fga"></i></td><td>ga = France, Metropolitan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgb"></i></td><td>gb = United Kingdom (Great Britain)</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgd"></i></td><td>gd = Grenada</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fge"></i></td><td>ge = Georgia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgf"></i></td><td>gf -French Guiana</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgh"></i></td><td>gh = Ghana</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgi"></i></td><td>gi = Gibraltar</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgl"></i></td><td>gl = Greenland</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgm"></i></td><td>gm = Gambia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgm"></i></td><td>gn = Guinea</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgp"></i></td><td>gp = Guadeloupe</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgq"></i></td><td>gq = Equatorial Guinea</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgr"></i></td><td>gr = Greece</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgs"></i></td><td>gs = South Georgia and the South Sandwich Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgt"></i></td><td>gt = Guatemala</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgu"></i></td><td>gu = Guam</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgw"></i></td><td>gw = Guinea-Bissau</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fgy"></i></td><td>gy = Guyana</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fhk"></i></td><td>hk = Hong Kong</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fhm"></i></td><td>hm = Heard & McDonald Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fhn"></i></td><td>hn = Honduras</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fhr"></i></td><td>hr = Croatia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fht"></i></td><td>ht = Haiti</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fhu"></i></td><td>hu = Hungary</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="emoji e229"></i></td><td>id = Indonesia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fie"></i></td><td>ie = Ireland</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fil"></i></td><td>il = Israel</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fin"></i></td><td>in = India</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fio"></i></td><td>io = British Indian Ocean Territory</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fiq"></i></td><td>iq = Iraq</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fir"></i></td><td>ir = Islamic Republic of Iran</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fis"></i></td><td>is = Iceland</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fit"></i></td><td>it = Italy</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fjm"></i></td><td>jm = Jamaica</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fjo"></i></td><td>jo = Jordan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fjp"></i></td><td>jp = Japan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fke"></i></td><td>ke = Kenya</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fkg"></i></td><td>kg = Kyrgyzstan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fkh"></i></td><td>kh = Cambodia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fki"></i></td><td>ki = Kiribati</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fkm"></i></td><td>km = Comoros</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fkn"></i></td><td>kn = St. Kitts and Nevis</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fkp"></i></td><td>kp = Korea, Democratic People's Republic of</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fkr"></i></td><td>kr = Korea, Republic of</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fkw"></i></td><td>kw = Kuwait</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fky"></i></td><td>ky = Cayman Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fkz"></i></td><td>kz = Kazakhstan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fla"></i></td><td>la = Lao People's Democratic Republic</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag flb"></i></td><td>lb = Lebanon</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag flc"></i></td><td>lc = Saint Lucia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fli"></i></td><td>li = Liechtenstein</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag flk"></i></td><td>lk = Sri Lanka</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag flr"></i></td><td>lr = Liberia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fls"></i></td><td>ls = Lesotho</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag flt"></i></td><td>lt = Lithuania</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag flu"></i></td><td>lu = Luxembourg</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag flv"></i></td><td>lv = Latvia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fly"></i></td><td>ly = Libyan Arab Jamahiriya</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fma"></i></td><td>ma = Morocco</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmc"></i></td><td>mc = Monaco</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmd"></i></td><td>md = Moldova, Republic of</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmg"></i></td><td>mg = Madagascar</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmh"></i></td><td>mh = Marshall Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmk"></i></td><td>mk = Macedonia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fml"></i></td><td>ml = Mali</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmm"></i></td><td>mm = Myanmar</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmn"></i></td><td>mn = Mongolia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmo"></i></td><td>mo = Macau</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmp"></i></td><td>mp = Northern Mariana Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmq"></i></td><td>mq = Martinique</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmr"></i></td><td>mr = Mauritania</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fms"></i></td><td>ms = Monserrat</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmt"></i></td><td>mt = Malta</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmu"></i></td><td>mu = Mauritius</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmv"></i></td><td>mv = Maldives</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmw"></i></td><td>mw = Malawi</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmx"></i></td><td>mx = Mexico</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmy"></i></td><td>my = Malaysia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fmz"></i></td><td>mz = Mozambique</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fna"></i></td><td>na = Nambia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fnc"></i></td><td>nc = New Caledonia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fne"></i></td><td>ne = Niger</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fnf"></i></td><td>nf = Norfolk Island</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fng"></i></td><td>ng = Nigeria</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fni"></i></td><td>ni = Nicaragua</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fnl"></i></td><td>nl = Netherlands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fno"></i></td><td>no = Norway</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fnr"></i></td><td>nr = Nauru</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fnu"></i></td><td>nu = Niue</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fnz"></i></td><td>nz = New Zealand</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fom"></i></td><td>om = Oman</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpa"></i></td><td>pa = Panama</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpe"></i></td><td>pe = Peru</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpf"></i></td><td>pf = French Polynesia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpg"></i></td><td>pg = Papua New Guinea</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fph"></i></td><td>ph = Philippines</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpk"></i></td><td>pk = Pakistan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpl"></i></td><td>pl = Poland</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpm"></i></td><td>pm = St. Pierre & Miquelon</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpn"></i></td><td>pn = Pitcairn</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpr"></i></td><td>pr = Puerto Rico</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fps"></i></td><td>ps = Palestine</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpt"></i></td><td>pt = Portugal</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpw"></i></td><td>pw = Palau</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fpy"></i></td><td>py = Paraguay</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fqa"></i></td><td>qa = Qatar</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fre"></i></td><td>re = Réunion</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fro"></i></td><td>ro = Romania</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fru"></i></td><td>ru = Russian Federation</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag frw"></i></td><td>rw = Rwanda</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsa"></i></td><td>sa = Saudi Arabia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsb"></i></td><td>sb = Solomon Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsc"></i></td><td>sc = Seychelles</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsd"></i></td><td>sd = Sudan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fse"></i></td><td>se = Sweden</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsg"></i></td><td>sg = Singapore</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsh"></i></td><td>sh = St. Helena</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsi"></i></td><td>si = Slovenia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsj"></i></td><td>sj = Svalbard & Jan Mayen Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsk"></i></td><td>sk = Slovakia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsl"></i></td><td>sl = Sierra Leone</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsm"></i></td><td>sm = San Marino</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsn"></i></td><td>sn = Senegal</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fso"></i></td><td>so = Somalia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsr"></i></td><td>sr = Suriname</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fst"></i></td><td>st = Sao Tome & Principe</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsv"></i></td><td>sv = El Salvador</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsy"></i></td><td>sy = Syrian Arab Republic</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fsz"></i></td><td>sz = Swaziland</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftc"></i></td><td>tc = Turks & Caicos Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftd"></i></td><td>td = Chad</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftf"></i></td><td>tf = French Southern Territories</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftg"></i></td><td>tg = Togo</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fth"></i></td><td>th = Thailand</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftj"></i></td><td>tj = Tajikistan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftk"></i></td><td>tk = Tokelau</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftl"></i></td><td>tl = Timor-Leste</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftn"></i></td><td>tn = Tunisia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fto"></i></td><td>to = Tonga</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftr"></i></td><td>tr = Turkey</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftt"></i></td><td>tt = Trinidad & Tobago</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftv"></i></td><td>tv = Tuvalu</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftw"></i></td><td>tw = Taiwan, Province of China</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag ftz"></i></td><td>tz = Tanzania, United Republic of</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fua"></i></td><td>ua = Ukraine</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fug"></i></td><td>ug = Uganda</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fum"></i></td><td>um = United States Minor Outlying Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fus"></i></td><td>us = United States of America</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fuy"></i></td><td>uy = Uruguay</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fuz"></i></td><td>uz = Uzbekistan</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fva"></i></td><td>va = Vatican City State</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fvc"></i></td><td>vc = St. Vincent & the Grenadines</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fve"></i></td><td>ve = Venezuela</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fvg"></i></td><td>vg = British Virgin Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fvi"></i></td><td>vi = United States Virgin Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fvn"></i></td><td>vn = Viet Nam</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fvu"></i></td><td>vu = Vanuatu</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fwf"></i></td><td>wf = Wallis & Futuna Islands</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fws"></i></td><td>ws = Samoa</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fye"></i></td><td>ye = Democratic Yemen</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fyt"></i></td><td>yt = Mayotte</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fza"></i></td><td>za = South Africa</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fzm"></i></td><td>zm = Zambia</td></tr>
+<tr><td></td><td>International Flags Dictionary</td><td><i class="flag fzw"></i></td><td>zw = Zimbabwe</td></tr>
+
+</table>
+
+</body>
+</html>
