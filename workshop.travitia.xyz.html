@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<title>The Workshop</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<div class="container">
+<h2>Welcome to my workshop!</h2>
+<p>Here's how my magical machine works:</p>
+<p></p>
+<ol>
+<li>
+A segment on the tape is either <code>0</code>, <code>1</code> or
+<code>_</code> (blank)
+</li>
+<li>
+The input is written to the tape. All other segments will be blank
+</li>
+<li>The cursor starts at the lefternmost segment of input</li>
+<li>As you know, the tape is infinitely large</li>
+<li>
+A movement on the tape is either <code>l</code> (left),
+<code>r</code> (right) or <code>n</code> (none)
+</li>
+<li>All states are numbers</li>
+<li><code>+&lt;state&gt;</code> defines the initial state</li>
+<li><code>-&lt;state&gt;</code> defines the success state</li>
+<li><code>!&lt;state&gt;</code> defines the error state</li>
+<li>
+A transition looks like this:
+<code>&lt;from state&gt;,&lt;to state&gt;,&lt;tape segment
+condition&gt;,&lt;segment to write&gt;,&lt;movement&gt;</code
+          >
+</li>
+</ol>
+<p>Easy, right? Now, I want my machine to perform the following task:</p>
+<p></p>
+<ol>
+<li>It starts in state 0</li>
+<li>It ends in state 7 if the input is valid</li>
+<li>It ends in state 6 if the input is invalid</li>
+</ol>
+<p>Here's what my machine does with the following inputs:</p>
+<ul>
+<li><code>_1111_</code>: Valid</li>
+<li><code>_1101_</code>: Invalid</li>
+<li><code>_1001_</code>: Valid</li>
+<li><code>_1010011110110110111100101_</code>: Valid</li>
+<li><code>_11001010010101101010_</code>: Invalid</li>
+</ul>
+<p>Should be no problem for you to make a machine just like mine!</p>
+<textarea id="input" class="form-control font-monospace" rows="10" cols="50">
+# Initial state
++0
+# End state
+-7
+# Error state
+!6
+
+# My magical program comes now!</textarea
+      >
+<button type="button" class="btn btn-primary mt-2" id="run">Run</button>
+</div>
+<script type="dc96e9608a4d41f39109dde7-module">
+      import init, { validate_machine } from "./pkg/machine_web.js";
+
+      const inputElem = document.getElementById("input");
+      const runButton = document.getElementById("run");
+
+      init().then(() => {
+        runButton.onclick = function () {
+          try {
+            alert(validate_machine(inputElem.value));
+          } catch (e) {
+            alert(e);
+          }
+        };
+      });
+    </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="dc96e9608a4d41f39109dde7-|49" defer></script></body>
+</html>
