@@ -1,0 +1,96 @@
+{
+  "name": "Sexy Ladies of Wire",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "My bird Koko is a Cockatiel",
+      "options": [
+        "Peezy",
+        "Meow",
+        "Mani",
+        "Saf",
+        "Adria",
+        "Lacy"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "I have a mild obsession with the Irish and British lads",
+      "options": [
+        "Mani",
+        "Saf",
+        "Meow",
+        "Sugar",
+        "Sylv",
+        "Please cancel myself"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "multipleChoice",
+      "text": "I am PCL\u0027s most wanted",
+      "options": [
+        "Mani",
+        "Adria",
+        "Salcat",
+        "Peezy",
+        "Poopy",
+        "Steve"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "My husband is away giving speeding tickets",
+      "options": [
+        "Peezy",
+        "Sugar",
+        "Mani",
+        "Poopy",
+        "Saf",
+        "Elvae"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "I am a cutie on wheels",
+      "options": [
+        "Adria",
+        "Peezy",
+        "Mani",
+        "Mira",
+        "Sugar",
+        "Steve"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "I\u0027m all hair",
+      "options": [
+        "Kale",
+        "Peezy",
+        "Mani",
+        "Sugar",
+        "Meow",
+        "Saf"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "I\u0027m a sexy yeti",
+      "options": [
+        "Mira",
+        "Kale",
+        "Salcat",
+        "Mani",
+        "Sugar",
+        "Poopy"
+      ],
+      "correctIndex": 0
+    }
+  ]
+}

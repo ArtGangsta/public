@@ -1,0 +1,89 @@
+{
+  "name": "Wireclub Chatters 2",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter has the palest skin, now that Gebediah has a slight tan?",
+      "options": [
+        "Ghosty",
+        "Michael",
+        "Nerdz",
+        "KingPat",
+        "Safari"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter is usually always in \u0022language rehab?\u0022 for their extensive use of the \u0022c\u0022 word?",
+      "options": [
+        "Michael",
+        "OJ",
+        "Haven",
+        "Bagel",
+        "SugarPill"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter used to mod the eff out of PCL, but now surprisingly delights in saying the \u0022c\u0022 word as often as possible?",
+      "options": [
+        "Porkchops",
+        "Mouse",
+        "Reddy",
+        "Adria",
+        "Night raider"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter threatened to report WireClub to the CIA, FBI, and BBB, after being superpowered and then suspended by a mod?",
+      "options": [
+        "SmartyPanz",
+        "Catdogg",
+        "Bedcrusher",
+        "Mathious",
+        "Morior"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter had the worst and most surprising meltdown in PCL, within the past month?",
+      "options": [
+        "Mathious",
+        "Fleye",
+        "SmartyPanz",
+        "Tony",
+        "Rickx"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter introduced the video clip \u0022Irish Rugby Player Loses His Shorts\u0022 to PCL?",
+      "options": [
+        "Janet",
+        "Peez",
+        "Heidi",
+        "SugarPill",
+        "KitKatt"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which two chatters watch \u0022Irish Rugby Player Loses His Shorts\u0022 for a minimum of five rewinds?",
+      "options": [
+        "Janet and Mani",
+        "Haven and Heidi",
+        "Adria and Lexy",
+        "Safari and Peez",
+        "SugarPill and Adria"
+      ],
+      "correctIndex": 3
+    }
+  ]
+}

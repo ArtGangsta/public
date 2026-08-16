@@ -1,0 +1,147 @@
+{
+  "name": "Cats of the 1990s",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "In 1994, this Disney movie introduced audiences to a young lion cub named Simba?",
+      "options": [
+        "The Jungle Book",
+        "The Lion King",
+        "Bambi",
+        "Finding Nemo"
+      ],
+      "correctIndex": 1,
+      "explanation": "The animated film released in 1994 that follows the journey of a young lion cub named Simba is The Lion King."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the 1990s, the musical \u0027Cats\u0027 featured the song \u0027Memory\u0027, which was performed at what specific location within the show\u0027s setting?",
+      "options": [
+        "A cathedral in Paris",
+        "An abandoned theater",
+        "A junkyard",
+        "A library in London"
+      ],
+      "correctIndex": 2,
+      "explanation": "In the 1993 musical \u0027Cats\u0027, based on T.S. Eliot\u0027s \u0027Old Possum\u0027s Book of Practical Cats\u0027, the character Grizabella sings \u0027Memory\u0027 while standing atop a discarded tire in the junkyard setting. The junkyard is the primary location for the entire musical, which is set on a single night."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which author wrote the original poems that the 1990s stage musical Cats is based on?",
+      "options": [
+        "Charles Dickens",
+        "T. S. Eliot",
+        "Mark Twain",
+        "Beatrix Potter"
+      ],
+      "correctIndex": 1,
+      "explanation": "The musical Cats is based on T. S. Eliot\u0027s 1939 poetry collection Old Possum\u0027s Book of Practical Cats, not a novel by Charles Dickens."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which coat pattern appears in only about 1 in 3,000 male cats?",
+      "options": [
+        "Calico",
+        "Persian",
+        "Siamese",
+        "Tabby"
+      ],
+      "correctIndex": 0,
+      "explanation": "Calico cats are almost always female because the coat-color gene is carried on the X chromosome, and approximately only 1 in 3,000 is born male."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which cat became a White House pet in 1993 and was famously photographed with the First Family?",
+      "options": [
+        "A Maine Coon named Whiskers",
+        "A calico named Patches",
+        "A tuxedo cat named Socks",
+        "An orange tabby named Garfield"
+      ],
+      "correctIndex": 2,
+      "explanation": "In 1993, Socks Clinton became the first cat to live in the White House since the Carter administration (which had a Siamese cat named Misty Malarky Ying Yang). Socks was a black-and-white tuxedo cat adopted by the Clinton family."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which theatrical production, originally premiering in London in 1981, became the longest-running Broadway show of the 1990s?",
+      "options": [
+        "Les Mis\u00E9rables",
+        "Cats",
+        "Rent",
+        "Beauty and the Beast"
+      ],
+      "correctIndex": 1,
+      "explanation": "The longest-running Broadway show of the 1990s, Cats, ran for 7,485 performances, closing on September 10, 2000. The Phantom of the Opera ran longer overall but began in the 1980s."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which cat actor, famous for a recurring role on a late-night comedy sketch show in the 1990s, was voiced by no human performer but instead appeared as a trained animal?",
+      "options": [
+        "Morris the Cat",
+        "Garfield the Cat",
+        "Toonces the Cat",
+        "Sylvester the Cat"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which cartoon cat, originally created decades earlier, was the star of a 1990s prequel series that showed him as a kitten?",
+      "options": [
+        "Garfield",
+        "Felix the Cat",
+        "Tom",
+        "Heathcliff"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which Muppet cat made her debut in the 1990s as a new character on a television series?",
+      "options": [
+        "Garfield\u0027s appearance in \u0027The Simpsons\u0027",
+        "Arnold the Pig\u0027s cousin in \u0027Hey Arnold!\u0027",
+        "Gaffer the cat from \u0027Muppets Tonight\u0027",
+        "The orange cat from \u0027The Muppet Christmas Carol\u0027"
+      ],
+      "correctIndex": 2,
+      "explanation": "In the 1990s, the show \u0027The Muppets Tonight\u0027 featured a new Muppet character named Gaffer, a female orange cat who was a notable addition to the Muppet ensemble during that era."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the 1995 film \u0027Babe\u0027, what old saying does the cat use to explain his boldness?",
+      "options": [
+        "\u0027a dog can chase a cat\u0027",
+        "\u0027a cat can look at a king\u0027",
+        "\u0027the cat\u0027s meow\u0027",
+        "\u0027a cat has nine lives\u0027"
+      ],
+      "correctIndex": 1,
+      "explanation": "The 1990s film \u0027Babe\u0027 features a scene where the title pig is told by a sheepdog that \u0027a cat can look at a king.\u0027 This line is a well-known reference to the English idiom, and the cat in the film is a character named Duke, a tabby cat that appears in the barnyard."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which 1990s cat breed was developed by crossing the Siamese and the Burmese?",
+      "options": [
+        "Balinese",
+        "Burmilla",
+        "Tonkinese",
+        "Havana Brown"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Tonkinese cat breed was developed in the 1960s but gained popularity and official recognition in the 1990s from a cross between the Siamese and the Burmese."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the 1990s, a cat named Socks became famous for living in which building?",
+      "options": [
+        "The Pentagon",
+        "The Lincoln Memorial",
+        "The White House",
+        "The Capitol Building"
+      ],
+      "correctIndex": 2,
+      "explanation": "Socks was the pet cat of the Clinton family while Bill Clinton was President, living in the White House from 1993 to 2001."
+    }
+  ]
+}

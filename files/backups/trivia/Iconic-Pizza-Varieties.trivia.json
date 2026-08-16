@@ -1,0 +1,17 @@
+{
+  "name": "Iconic Pizza Varieties",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which pizza variety is traditionally topped with tomato sauce, mozzarella, and fresh basil?",
+      "options": [
+        "Margherita",
+        "Hawaiian",
+        "Pepperoni",
+        "Four Cheese"
+      ],
+      "correctIndex": 0,
+      "explanation": "Margherita is the classic Neapolitan pizza topped with tomato sauce, mozzarella, and basil, representing the colors of the Italian flag."
+    }
+  ]
+}

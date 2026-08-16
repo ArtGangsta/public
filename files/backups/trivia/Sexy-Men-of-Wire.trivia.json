@@ -1,0 +1,95 @@
+{
+  "name": "Sexy Men of Wire",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter has a dog named Roxy?",
+      "options": [
+        "Michael",
+        "Alk",
+        "Geb",
+        "OJ",
+        "Max"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter grew up on the tough streets of West London?",
+      "options": [
+        "Steve",
+        "Max",
+        "Day",
+        "Michael",
+        "Adrian",
+        "Tony"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter loves a Latina with a fatty?",
+      "options": [
+        "Ghosty",
+        "OJ",
+        "Michael",
+        "Max",
+        "Thunder",
+        "Rick"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter is always sipping in the day?",
+      "options": [
+        "Michael",
+        "Day",
+        "Steve",
+        "Max",
+        "Lord",
+        "Adrian"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter looks like a sexy Chihuahua?",
+      "options": [
+        "Michael",
+        "Steve",
+        "Ghosty",
+        "Richie",
+        "OJ",
+        "Steve"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter wears a vest and leather elbow patches?",
+      "options": [
+        "Michael",
+        "Steve",
+        "Ghosty",
+        "Adrian",
+        "Mace",
+        "Thunder"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter has the best British patter and slang/sweet talk?",
+      "options": [
+        "Daydreamer",
+        "Steve",
+        "LordMudslide",
+        "Max",
+        "Gebediah",
+        "someguyinuk"
+      ],
+      "correctIndex": 2
+    }
+  ]
+}

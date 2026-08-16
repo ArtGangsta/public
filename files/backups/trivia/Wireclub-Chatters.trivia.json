@@ -1,0 +1,305 @@
+{
+  "name": "Wireclub Chatters",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter got drunk and posted a voca in which he said, \u0022 I\u0027m very drunk and I just love you.\u0022",
+      "options": [
+        "OJ",
+        "Daydreamer",
+        "EmotionallyAFK",
+        "Michael",
+        "Max"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter has an infamous naked bathtub picture?",
+      "options": [
+        "EmotionallyAFK",
+        "Haven",
+        "Mace",
+        "Geb",
+        "OJ"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter has a deadly fear of moths and a love for Nutella ice cream?",
+      "options": [
+        "Thundermouse",
+        "Adrian",
+        "Peez",
+        "Mani",
+        "Adria"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter engaged in a sexual act in his car, on the first date?",
+      "options": [
+        "Geb",
+        "Flac",
+        "Water Thief",
+        "Max",
+        "Adrian"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter is required to go inside for dinner, when the chat streetlights come on?",
+      "options": [
+        "Michael",
+        "Steve",
+        "Adrian",
+        "Peez",
+        "Mace"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter\u0027s favorite condiment is Vegemite?",
+      "options": [
+        "Steve",
+        "Adria",
+        "Thundermouse",
+        "Flac",
+        "Michael"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter was approached in a bar and asked to buy a woman a birthday drink?",
+      "options": [
+        "OJ",
+        "Flac",
+        "SmartyPanz",
+        "Geb",
+        "Michael"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter never drinks because it makes them sweet and \u0022no one deserves that.\u0022",
+      "options": [
+        "Safari",
+        "Hypno",
+        "KitKatt",
+        "Peez",
+        "Heidi"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter is the most recent one to be interrogated by Safari?",
+      "options": [
+        "Steve",
+        "EmotionallyAFK",
+        "Max",
+        "LordMudslide",
+        "Digilante"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter believes his siblings were sold off by his mother?",
+      "options": [
+        "Daydreamer",
+        "Steve",
+        "Michael",
+        "SmartyPanz",
+        "Catdogg"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter usually spends the summer months making marinara sauce?",
+      "options": [
+        "Michael",
+        "Adrian",
+        "Steve",
+        "OJ",
+        "Flac"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter was stood up in the rain at the Outback?",
+      "options": [
+        "OJ",
+        "Geb",
+        "Adrian",
+        "Ghosty",
+        "Steve"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter did Lacey threaten to push down the stairs?",
+      "options": [
+        "presspass",
+        "Max",
+        "EmotionallyAFK",
+        "Steve",
+        "KitKatt"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter used to dance in a cage wearing a Catholic schoolgirl outfit?",
+      "options": [
+        "Peez",
+        "Mani",
+        "Hypno",
+        "Safari",
+        "Kale"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter is most likely to answer all of your animal questions?",
+      "options": [
+        "Peez",
+        "Michael",
+        "Flac",
+        "KitKatt",
+        "EmotionallyAFK"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter will never ever host a party at their house for fellow chatters?",
+      "options": [
+        "Ghosty",
+        "Peez",
+        "Haven",
+        "Adria",
+        "Steve"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter\u0027s father did another chatter accidently create using AI?",
+      "options": [
+        "OJ",
+        "Mani",
+        "Haven",
+        "Adria",
+        "Safari"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter is most likely to tell you the Latin name for any flora or fauna?",
+      "options": [
+        "Peez",
+        "Srch",
+        "Haven",
+        "Thundermouse",
+        "Poppy"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter uses his voice to seduce ginger creatures?",
+      "options": [
+        "SmartyPanz",
+        "Michael",
+        "Daydreamer",
+        "OJ",
+        "Steve"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter refuses to have a surgical procedure in order to conform to their faith?",
+      "options": [
+        "EmotionallyAFK",
+        "Adrian",
+        "Brandon",
+        "Michael",
+        "Geb"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter told the chat that if your sexual partner disappears into the bathroom to use an electric toothbrush, that you probably didn\u0027t satisfy her?",
+      "options": [
+        "Daisy",
+        "Mani",
+        "StNuck",
+        "Peez",
+        "Adria"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter\u0027s pet is most likely to ensure you are arrested for harboring drugs?",
+      "options": [
+        "Mani",
+        "EmotionallyAFK",
+        "Haven",
+        "Poppy",
+        "Peez"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What chatter is most likely to have killed something on any given day?",
+      "options": [
+        "Haven",
+        "Mani",
+        "Peez",
+        "Janet",
+        "Adria"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter is usually told to \u0022start the eff over\u0022 when they enter the chat?",
+      "options": [
+        "Michael",
+        "Geb",
+        "Flac",
+        "Moscow",
+        "SmartyPanz"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter is most likely to eviscerate a sexist, entitled, white male chatter?",
+      "options": [
+        "Hypno",
+        "Poppy",
+        "Weedova",
+        "Joy",
+        "Carms"
+      ],
+      "correctIndex": 2
+    }
+  ]
+}

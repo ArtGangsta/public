@@ -1,0 +1,197 @@
+{
+  "name": "Movie Death Scenes",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which movie villain asks Bruce Wayne this question before falling to his death?",
+      "options": [
+        "\u0022You know what I am? I\u0027m a dog chasing cars.\u0022",
+        "\u0022Have you ever danced with the devil in the pale moonlight?\u0022",
+        "\u0022You either die a hero, or you live long enough to see yourself become the villain.\u0022",
+        "\u0022Why so serious?\u0022"
+      ],
+      "correctIndex": 1,
+      "explanation": "The question asks for the famous last words of the Joker in the 1989 film Batman. The correct answer is \u0022Have you ever danced with the devil in the pale moonlight?\u0022"
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which actor performed the final mortal scene of the Godfather trilogy?",
+      "options": [
+        "Marlon Brando",
+        "Robert De Niro",
+        "James Caan",
+        "Al Pacino"
+      ],
+      "correctIndex": 3,
+      "explanation": "The correct answer is \u0027Al Pacino.\u0027 In The Godfather Part III, Al Pacino\u0027s character Michael Corleone dies slumped in a chair in the courtyard of his villa. It is the final scene of the film and of the Godfather trilogy."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which movie marks the first time a shapeshifting antagonist dies by being immersed in molten metal?",
+      "options": [
+        "At the end of The Matrix, Agent Smith is destroyed by a train.",
+        "In Terminator 2: Judgment Day, the T-1000 is eliminated by molten steel.",
+        "At the end of The Silence of the Lambs, Buffalo Bill is shot by FBI agents.",
+        "In Alien, the Xenomorph is killed when it\u0027s blown out of an airlock."
+      ],
+      "correctIndex": 1,
+      "explanation": "The character T-1000, played by Robert Patrick, dies by melting in a vat of molten steel. This was the first time a major Hollywood film featured a villain who was a liquid-metal shapeshifter, a groundbreaking visual effects achievement."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which film death scene was directly inspired by both a biblical narrative and a plot point from Shakespeare\u0027s Hamlet?",
+      "options": [
+        "The death of Boromir in The Lord of the Rings: The Fellowship of the Ring",
+        "The death of Wash in Serenity",
+        "The death of Mufasa in The Lion King",
+        "The death of Bambi\u0027s mother in Bambi"
+      ],
+      "correctIndex": 2,
+      "explanation": "In The Lion King, Mufasa\u0027s death scene was influenced by the biblical story of Joseph being sold into slavery by his brothers, as well as the betrayal in Hamlet, where Claudius kills his brother. This question connects these influences to the iconic animated scene."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which character\u0027s death scene is widely regarded as the first major character death in a blockbuster film franchise?",
+      "options": [
+        "Alec Guinness in Star Wars (1977)",
+        "John Hurt in Alien (1979)",
+        "Darth Vader in Return of the Jedi (1983)",
+        "Hannibal Lecter in The Silence of the Lambs (1991)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alec Guinness\u0027s character Obi-Wan Kenobi dies in the original 1977 film, and at the time of its release, he was the most established actor in the cast, giving the scene significant weight."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which cinematic villain\u0027s death scene involves falling from a great height after losing a loved one?",
+      "options": [
+        "Magneto in X-Men: The Last Stand",
+        "Hans Gruber in Die Hard",
+        "The Joker in Batman (1989)",
+        "Two-Face in The Dark Knight"
+      ],
+      "correctIndex": 3,
+      "explanation": "In The Dark Knight, Harvey Dent, corrupted into Two-Face after losing Rachel Dawes, dies by falling from a building during his final confrontation with Batman."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which film death scene does the character die on a specific numbered stair?",
+      "options": [
+        "Jim Malone in The Untouchables (1987) dies after being shot, and he expires on the 17th stair",
+        "John Coffey in The Green Mile (1999) dies in the electric chair, which is triggered by a sponge soaked in water",
+        "Jackie Brown in Jackie Brown (1997) dies while bleeding out on the floor of a parking garage",
+        "Maximus in Gladiator (2000) dies in the Colosseum arena, and his final word count is 47 spoken in Latin"
+      ],
+      "correctIndex": 0,
+      "explanation": "In the 1987 film \u0022The Untouchables,\u0022 Sean Connery\u0027s character Jim Malone is fatally shot while entering his apartment. His death scene incorporates a specific numerical detail: he is killed on the 17th step of the staircase. This precise count is an iconic piece of trivia often cited by fans."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which villain meets their end by being devoured by their own allies?",
+      "options": [
+        "Scar in The Lion King",
+        "Hans Gruber in Die Hard",
+        "The Joker in The Dark Knight",
+        "Dracula in Bram Stoker\u0027s Dracula"
+      ],
+      "correctIndex": 0,
+      "explanation": "In \u0022The Lion King\u0022 (1994), Scar is cornered by Simba and, after a final confrontation, is attacked and killed by his own hyena allies."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which TV series death scene does the character drown while typing a cryptic final message on his hand?",
+      "options": [
+        "Jack Shephard dying in the bamboo forest at the end of the series",
+        "Charlie Pace drowning in the Looking Glass station in Lost",
+        "Sayid Jarrah blowing himself up on the submarine",
+        "Boone sacrificing himself in the crashed Beechcraft in the jungle"
+      ],
+      "correctIndex": 1,
+      "explanation": "In Lost (2004\u20132010), Charlie Pace (Dominic Monaghan) drowns in the underwater Looking Glass station after closing the jammer to rescue his friends, famously signing off with \u2018Not Penny\u2019s Boat.\u2019"
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which film death scene did the character die by gunshot while delivering a prophecy about humanity\u0027s future?",
+      "options": [
+        "Bruce the shark in Jaws (1975)",
+        "Marion Crane in Psycho (1960)",
+        "Roy Batty in Blade Runner (1982)",
+        "Zira in Planet of the Apes (1968)"
+      ],
+      "correctIndex": 3,
+      "explanation": "In the 1968 film \u0027Planet of the Apes\u0027, the character Zira (played by Kim Hunter) was shot and killed along with Cornelius, marking the franchise\u0027s first on-screen death of a major sympathetic character, while also being the shock ending of the original film era."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which character\u0027s death scene involves being kicked into a deep well as punishment for disrespect?",
+      "options": [
+        "In Gladiator, Maximus kills Commodus by stabbing him in the throat during their arena duel.",
+        "In Star Wars: Return of the Jedi, Darth Vader throws Emperor Palpatine into the Death Star\u0027s reactor shaft.",
+        "In 300, King Leonidas kills the Persian messenger by kicking him into a well.",
+        "In The Dark Knight, the Joker falls from a skyscraper after Batman\u0027s confrontation."
+      ],
+      "correctIndex": 2,
+      "explanation": "In the film 300, King Leonidas kicks the Persian emissary into a deep well as his response to Xerxes\u0027 demand for submission."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which film death scene does the main antagonist die from an exploding scuba tank?",
+      "options": [
+        "Jaws",
+        "Jurassic Park",
+        "Titanic",
+        "The Matrix"
+      ],
+      "correctIndex": 0,
+      "explanation": "The shark\u0027s death by scuba tank explosion is the memorable climax of Jaws, which established the blockbuster formula."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which 1979 film does the main antagonist die by falling onto subway tracks in a chase scene?",
+      "options": [
+        "The French Connection",
+        "The Warriors",
+        "The Taking of Pelham One Two Three",
+        "Midnight Run"
+      ],
+      "correctIndex": 1,
+      "explanation": "In the film The Warriors (1979), the main antagonist Luther meets his end by falling onto the subway tracks and being struck by an oncoming train after chasing the title gang."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which actor performed the death scene riding a nuclear bomb in Dr. Strangelove?",
+      "options": [
+        "John Wayne",
+        "Slim Pickens",
+        "George C. Scott",
+        "Peter Sellers"
+      ],
+      "correctIndex": 1,
+      "explanation": "The scene where Major Kong rides the nuclear bomb in Dr. Strangelove was performed by Slim Pickens, who was hired as a replacement for an actor originally considered and brought a unique comic approach to the role of the cowboy pilot."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which film death scene features a character fatally shooting himself during a game of chance?",
+      "options": [
+        "In the 1986 film Platoon, the character dies in a helicopter crash while trying to rescue wounded soldiers.",
+        "In the 1999 film The Matrix, the character dies after being shot by agents while using a phone booth.",
+        "In the 1978 film The Deer Hunter, the character dies by shooting himself in the head during a game of Russian roulette.",
+        "In the 2000 film Gladiator, the character dies by being stabbed by a Roman senator in an arena fight."
+      ],
+      "correctIndex": 2,
+      "explanation": "In the 1978 film \u0022The Deer Hunter,\u0022 Christopher Walken\u0027s character, Nick Chevotarevich, dies by a self-inflicted gunshot wound to the head during a game of Russian roulette in a Saigon gambling den."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which film death scene did the title characters die in a prolonged, slow-motion barrage of gunfire, redefining on-screen violence in the late 1960s?",
+      "options": [
+        "Marvin in Pulp Fiction",
+        "Tony Montana in Scarface",
+        "Bonnie and Clyde in Bonnie and Clyde",
+        "Jack Torrance in The Shining"
+      ],
+      "correctIndex": 2,
+      "explanation": "In Bonnie and Clyde (1967), the title characters die in a prolonged slow-motion hail of bullets, redefining on-screen violence."
+    }
+  ]
+}

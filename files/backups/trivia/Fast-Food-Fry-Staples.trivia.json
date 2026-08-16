@@ -1,0 +1,29 @@
+{
+  "name": "Fast-Food Fry Staples",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which famous fast-food catchphrase is most closely tied to french fries?",
+      "options": [
+        "\u0022Have it your way\u0022",
+        "\u0022You want fries with that?\u0022",
+        "\u0022Finger lickin\u0027 good\u0022",
+        "\u0022I\u0027m loving it\u0022"
+      ],
+      "correctIndex": 1,
+      "explanation": "The iconic line \u0022You want fries with that?\u0022 has long been associated with fast-food culture, specifically McDonald\u0027s, as a prompt from cashiers to upsell customers on an order of french fries."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which fast-food chain prominently labels its french fries as \u0027World Famous Fries\u0027 on its packaging?",
+      "options": [
+        "Wendy\u0027s",
+        "Burger King",
+        "Arby\u0027s",
+        "McDonald\u0027s"
+      ],
+      "correctIndex": 3,
+      "explanation": "McDonald\u0027s is the fast-food chain most strongly associated with french fries, and the term \u0027World Famous Fries\u0027 is directly printed on their fry packaging and used in their advertising."
+    }
+  ]
+}

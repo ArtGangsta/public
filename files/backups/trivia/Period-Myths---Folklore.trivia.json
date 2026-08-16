@@ -1,0 +1,41 @@
+{
+  "name": "Period Myths \u0026 Folklore",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "According to Western wedding folklore, what action is a bride supposed to take to bring good luck to an unmarried woman?",
+      "options": [
+        "She blows out the candles on a cake",
+        "She kisses the groom first",
+        "She tosses her bouquet over her shoulder",
+        "She opens a gift from her mother"
+      ],
+      "correctIndex": 2,
+      "explanation": "In many folk traditions, a bride throwing her bouquet over her shoulder is believed to bring good luck to the single woman who catches it, symbolizing that she will be next to marry."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In Scandinavian folklore, what small, bearded creature is traditionally said to protect a farm and its inhabitants from misfortune?",
+      "options": [
+        "Draugr",
+        "Huldra",
+        "Nisse",
+        "Troll"
+      ],
+      "correctIndex": 2,
+      "explanation": "The nisse is a tomte-like creature from Scandinavian folklore, typically associated with homesteads and barns."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In medieval Germanic folklore, during which seasonal period was the spectral \u0027Wild Hunt\u0027 most commonly said to ride?",
+      "options": [
+        "the autumn equinox",
+        "the Yule season",
+        "Easter",
+        "midsummer night"
+      ],
+      "correctIndex": 1,
+      "explanation": "In old European folklore, particularly from the Rhineland and Germanic regions, the \u0027wild hunt\u0027 was most often led by the god Woden (Odin) during the Yule season, not during the autumn equinox or midsummer night."
+    }
+  ]
+}

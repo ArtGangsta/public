@@ -1,0 +1,76 @@
+{
+  "name": "2000s Stoner Comedies",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which 2004 stoner comedy features a cameo by actor Neil Patrick Harris playing himself?",
+      "options": [
+        "Shaun of the Dead",
+        "Grandma\u0027s Boy",
+        "Harold \u0026 Kumar Go to White Castle",
+        "Pineapple Express"
+      ],
+      "correctIndex": 2,
+      "explanation": "Harold \u0026 Kumar Go to White Castle includes Neil Patrick Harris playing a fictionalized version of himself, a classic stoner-comedy cameo."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which 2008 stoner comedy follows a process server and his drug dealer who must flee from a corrupt police officer and a drug lord?",
+      "options": [
+        "How High",
+        "The Wackness",
+        "Pineapple Express",
+        "Grandma\u0027s Boy"
+      ],
+      "correctIndex": 2,
+      "explanation": "In the 2008 stoner comedy \u0027Pineapple Express,\u0027 Seth Rogen and James Franco star as a process server and his drug dealer who go on the run after witnessing a murder."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the 2004 stoner comedy Harold \u0026 Kumar Go to White Castle, what is the main challenge the duo faces when they are pulled over by a police officer?",
+      "options": [
+        "Fight a drug lord",
+        "Escape a giant sloth",
+        "Outrun a bear",
+        "Burp the alphabet"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which year was the stoner comedy film \u0027Harold \u0026 Kumar Go to White Castle\u0027 released?",
+      "options": [
+        "2006",
+        "2004",
+        "2005",
+        "2003"
+      ],
+      "correctIndex": 1,
+      "explanation": "The correct answer is 2004, because the film \u0027Harold \u0026 Kumar Go to White Castle\u0027 was released in 2004."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the 2001 stoner comedy How High, what three-digit number is central to retrieving a mystical form of marijuana?",
+      "options": [
+        "839",
+        "406",
+        "627",
+        "211"
+      ],
+      "correctIndex": 3,
+      "explanation": "In How High, the number 406 refers to the mailbox combination the characters must dial to access their weed supplier\u0027s orders from beyond the grave."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which director helmed the 2008 stoner comedy featuring a process server and his drug dealer on the run?",
+      "options": [
+        "Greg Mottola",
+        "David Gordon Green",
+        "Judd Apatow",
+        "Kevin Smith"
+      ],
+      "correctIndex": 1,
+      "explanation": "David Gordon Green directed the 2008 stoner comedy Pineapple Express, which features a complex blend of action and comedy."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "1990s Comedy Greatest Hits",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which sibling duo dominated 1990s comedy with films like Dumb and Dumber, There\u0027s Something About Mary, and Kingpin?",
+      "options": [
+        "John and Scott Mosier",
+        "Peter and Bobby Farrelly",
+        "The Coen brothers",
+        "The Wachowskis"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Farrelly brothers wrote and directed Dumb and Dumber, There\u0027s Something About Mary, and Kingpin, among other hits, making them the most successful comedy-directing siblings of the 1990s."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which British comedy group made its television debut in the final year of the 1990s?",
+      "options": [
+        "The Goodies",
+        "The Two Ronnies",
+        "Monty Python",
+        "The League of Gentlemen"
+      ],
+      "correctIndex": 3,
+      "explanation": "The Two Ronnies, The Goodies, and Monty Python were all active in earlier decades, while The League of Gentlemen premiered in 1999, making it the debut of a 1990s comedy group."
+    }
+  ]
+}

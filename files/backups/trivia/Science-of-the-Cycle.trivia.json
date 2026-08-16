@@ -1,0 +1,29 @@
+{
+  "name": "Science of the Cycle",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "What name is given to the physical process through which water vapor in the atmosphere becomes liquid water droplets?",
+      "options": [
+        "Transpiration",
+        "Precipitation",
+        "Sublimation",
+        "Condensation"
+      ],
+      "correctIndex": 3,
+      "explanation": "In the water cycle, the process by which water vapor turns directly into liquid water is called condensation."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the primary energy source that drives the continuous movement of water in the water cycle?",
+      "options": [
+        "Wind energy",
+        "Lunar gravity",
+        "Earth\u0027s rotation",
+        "Solar energy"
+      ],
+      "correctIndex": 3,
+      "explanation": "The water cycle consists of evaporation and condensation, with surface water becoming water vapor and then returning as precipitation like rain or snow, so its primary driver is the Sun."
+    }
+  ]
+}

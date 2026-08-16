@@ -1,0 +1,77 @@
+{
+  "name": "White ppl Casserole Classics",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which of these classic casseroles traditionally use cream of mushroom soup as a key ingredient?",
+      "options": [
+        "Macaroni and cheese",
+        "Tater tot hotdish",
+        "Shepherd\u0027s pie",
+        "Chicken pot pie"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tater tot is the correct answer. Tater tot hotdish, a casserole with ground beef, vegetables, cream of mushroom soup, and tater tots on top, is a classic Minnesota dish."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What classic casserole traditionally calls for exactly 1 3/4 cups of French-fried onions in its original recipe?",
+      "options": [
+        "Chicken and rice casserole",
+        "Broccoli cheese casserole",
+        "Tuna noodle casserole",
+        "Green bean casserole"
+      ],
+      "correctIndex": 3,
+      "explanation": "Green bean casserole was invented by Dorcas Reilly in 1955 and calls for 1 3/4 cups of French-fried onions, including a topping layer baked on at the end."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which of these classic casseroles was first created in a test kitchen by a Campbell\u0027s Soup Company employee?",
+      "options": [
+        "Corn casserole",
+        "Green bean casserole",
+        "Broccoli rice casserole",
+        "Tuna noodle casserole"
+      ],
+      "correctIndex": 1,
+      "explanation": "The classic Green Bean Casserole was created by Dorcas Reilly in 1955 for the Campbell Soup Company, making it the only one of these casseroles that debuted at a specific company and has a known inventor."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which classic white casserole is known for incorporating a crushed potato chip topping as a key ingredient?",
+      "options": [
+        "Hot chicken salad casserole",
+        "Tuna noodle casserole",
+        "King Ranch casserole",
+        "Johnny Marzetti"
+      ],
+      "correctIndex": 0,
+      "explanation": "The hot chicken salad casserole, also known as Mormon casserole, traditionally includes a crushed potato chip topping for crunch."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which classic white casserole was promoted in a mid-century ad campaign with the slogan, \u0027The quick and easy way to a man\u0027s heart\u0027?",
+      "options": [
+        "Chicken and rice casserole",
+        "Macaroni and cheese casserole",
+        "Tuna noodle casserole",
+        "Hamburger casserole"
+      ],
+      "correctIndex": 2,
+      "explanation": "The correct answer is Tuna noodle casserole, a dish popularized in the mid-20th century and often associated with the slogan \u0027The Quick and Easy Way to a Man\u0027s Heart\u0027 in an early Campbell\u0027s Soup advertisement."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which classic white casserole was originally named after a famous Texas ranch?",
+      "options": [
+        "Tamale pie",
+        "Chicken Tetrazzini",
+        "King Ranch casserole",
+        "Hawaiian haystack"
+      ],
+      "correctIndex": 2,
+      "explanation": "The King Ranch casserole was first created in the 1950s by the King Ranch in Texas, making it a distinct classic with a known origin tied to its name."
+    }
+  ]
+}
