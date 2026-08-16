@@ -1,0 +1,125 @@
+{
+  "name": "Safari",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which chat member's housing crisis and stress about rehoming cats did Safari help manage?",
+      "options": [
+        "ColoradoCody",
+        "MultipleSarcasms",
+        "Weedova",
+        "Rowdy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Safari stepped in with practical, calm logic when MultipleSarcasms (Sarc) faced housing and cat rehoming stress."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What activity were Safari and Max (deep_search) doing together according to Safari?",
+      "options": [
+        "Playing late-night chess",
+        "\"Doing tiny\" on video/cam",
+        "Listening to music from Ibiza",
+        "Solving online trivia"
+      ],
+      "correctIndex": 1,
+      "explanation": "Safari specifically mentioned that she and Max were 'doing tiny together' using the video/cam feature."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What joke did Safari make regarding her mutual care and friendly banter with Max?",
+      "options": [
+        "\"Looks like my foot rubs paid off\"",
+        "\"He owes me a coffee\"",
+        "\"We're unbeatable at chess\"",
+        "\"He's my personal bodyguard\""
+      ],
+      "correctIndex": 0,
+      "explanation": "Safari jokingly noted, 'Looks like my foot rubs paid off' in reference to their banter and support."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "How did Safari respond when MultipleSarcasms faced potential housing issues?",
+      "options": [
+        "She offered to let him move into her spare room",
+        "She advised him step-by-step to take control and retain independence",
+        "She suggested he rehome his cats immediately",
+        "She advised him to leave the chat room to reduce stress"
+      ],
+      "correctIndex": 1,
+      "explanation": "Safari helped Sarc map out a calm, step-by-step plan to retain independence and keep his cats."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chat member did Safari notice was not his \"normal cheery self,\" prompting her to offer comfort?",
+      "options": [
+        "MultipleSarcasms",
+        "Rowdy",
+        "ColoradoCody",
+        "Max"
+      ],
+      "correctIndex": 2,
+      "explanation": "Safari noticed ColoradoCody wasn't his normal cheery self and checked on his well-being."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What specific role or function does Safari naturally adopt in the public room when conflicts arise?",
+      "options": [
+        "Formal chat administrator",
+        "Trivia host",
+        "Informal mediator and peacekeeper",
+        "Passive observer"
+      ],
+      "correctIndex": 2,
+      "explanation": "Safari serves as an informal mediator and peacekeeper who works to de-escalate room tension."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chatter experienced family stress and stomach issues, receiving reassurance from Safari?",
+      "options": [
+        "Weedova",
+        "ColoradoCody",
+        "MultipleSarcasms",
+        "Rowdy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Safari offered reassuring words and lighthearted music talk when Weedova dealt with family stress and stomach issues."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which of the following is an activity Safari explicitly enjoys in the chat environment?",
+      "options": [
+        "Moderating trivia bot settings",
+        "Playing late-night chess",
+        "Hosting public video streams alone",
+        "Writing poetry for members"
+      ],
+      "correctIndex": 1,
+      "explanation": "Safari enjoys casual activities such as playing late-night chess and listening to music."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What character trait describes Safari's communication style when resolving conflicts?",
+      "options": [
+        "Strictly confrontational",
+        "Reaching out via private messages to de-escalate gently",
+        "Publicly calling out rule breakers",
+        "Ignoring the situation entirely"
+      ],
+      "correctIndex": 1,
+      "explanation": "Safari actively tries to de-escalate tension by reaching out nicely in private messages."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the nature of the relationship between Safari and Max (deep_search)?",
+      "options": [
+        "Purely competitive rivals",
+        "Distant acquaintances",
+        "Warm, affectionate, and mutually supportive",
+        "Strictly professional co-moderators"
+      ],
+      "correctIndex": 2,
+      "explanation": "The relationship between Safari and Max is warm, affectionate, and mutually supportive."
+    }
+  ]
+}

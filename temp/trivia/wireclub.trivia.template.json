@@ -1,0 +1,25 @@
+
+
+
+{
+  "name": "<quiz name>",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "question test",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Explanation (shown in reveal.  Optional -- leave blank to skip)"
+    },
+    {
+      "type": "writeIn",
+      "text": "Write in question text",
+      "answer": "correct answer that players type in chat.",
+      "explanation": "Explanation (shown in reveal.  Optional -- leave blank to skip)"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+CREATE A TRIVIA QUIZ + PREPARE IT FOR INDEPENDENT AI VERIFICATION
+
+I want you to create a trivia quiz according to the following workflow.
+
+==================================================
+STEP 1 — ASK ME FOR THE QUIZ PARAMETERS
+==================================================
+
+Before creating anything, ask me these two questions:
+
+1. "How many questions would you like? (10 is recommended, but you can choose any number.)"
+
+2. "How many answer choices would you like for each question? (Choose 4, 5, or 6.)"
+
+Wait for my answers before proceeding.
+
+==================================================
+STEP 2 — CREATE THE QUIZ
+==================================================
+
+Create exactly the number of questions I specify.
+
+Use exactly the number of answer choices I specify for every question.
+
+QUIZ DESIGN RULES:
+
+- Each question should follow the same basic question pattern.
+- Prefer using the same set of answer choices for every question when the quiz format allows it.
+- Each question must have exactly one objectively correct answer.
+- The correct answer should vary from question to question and be reasonably balanced among the available choices.
+- Avoid an obvious pattern in the placement of correct answers.
+- Answer choices should be plausible and clearly distinct.
+- Choose examples where the correct answer is well-established.
+- Avoid questions where two or more answers could reasonably be defended.
+- Prefer famous, recognizable examples rather than obscure ones.
+- If a subject can have multiple possible answers, choose an example where one answer is clearly the primary, most characteristic, standard, or best-known answer.
+- Don't use an example merely because it technically fits; the answer should make good trivia.
+- Keep questions concise and easy to read in a chat room.
+- Don't give away the answer through the wording of the question.
+
+IMPORTANT:
+The goal is not merely to create questions that YOU believe have answers. The goal is to create questions where another knowledgeable AI should independently arrive at the same answers.
+
+==================================================
+STEP 3 — VERIFY THE QUIZ YOURSELF
+==================================================
+
+Before presenting the quiz, internally check every question:
+
+1. Is the question factually accurate?
+2. Is the designated answer factually correct?
+3. Is there only ONE reasonable answer?
+4. Could another knowledgeable person reasonably interpret the question differently?
+5. Are any answer choices overlapping or insufficiently distinct?
+6. Is the wording precise enough to avoid ambiguity?
+7. Are the correct answers reasonably distributed among the choices?
+8. Are the questions interesting and suitable for a general trivia audience?
+
+If a question is ambiguous, revise it before presenting the quiz.
+
+==================================================
+STEP 4 — PRESENT THE QUIZ
+==================================================
+
+Present the quiz normally, followed by an answer key for ME.
+
+Use this format:
+
+1. [Question]
+   A. [Answer choice]
+   B. [Answer choice]
+   C. [Answer choice]
+   D. [Answer choice]
+
+[Continue for the requested number of questions.]
+
+ANSWER KEY:
+1. [letter] — [correct answer]
+2. [letter] — [correct answer]
+3. [letter] — [correct answer]
+etc.
+
+You may include a brief explanation for each answer if useful.
+
+==================================================
+STEP 5 — INDEPENDENT AI VERIFICATION
+==================================================
+
+After I tell you that I like the quiz, I may say something like:
+
+"Prepare this quiz for verification by another AI."
+
+When I do that, create ONE plaintext code block containing a handover prompt for another AI.
+
+The code block must contain:
+
+- The quiz questions.
+- All answer choices.
+- NO answer key.
+- NO explanations that reveal the answers.
+- Instructions telling the other AI that this is an independent verification test.
+- Instructions to answer every question independently rather than trying to infer what the quiz creator intended.
+- Instructions to give its answers in a simple, standardized format.
+
+Use instructions similar to:
+
+"Please independently take this trivia quiz. Do not assume that the quiz creator's intended answers are correct. Determine the best answer to each question yourself. If you believe a question is ambiguous or has more than one defensible answer, explicitly identify it."
+
+Then specify this exact response format:
+
+ANSWERS:
+1. A
+2. C
+3. B
+4. D
+etc.
+
+After the answer list, instruct the other AI to provide:
+
+AMBIGUOUS QUESTIONS:
+- None
+
+or, if applicable:
+
+AMBIGUOUS QUESTIONS:
+- Question 4: [brief explanation of the ambiguity]
+
+The handover prompt should NOT contain the original answer key because that would defeat the purpose of the independent verification.
+
+==================================================
+STEP 6 — CHECK THE OTHER AI'S ANSWERS
+==================================================
+
+After I return with the other AI's answers and say something such as:
+
+"The other AI gave these answers. Confirm whether they are correct."
+
+Compare the other AI's answers against your verified answer key.
+
+For each question, determine whether the other AI selected the correct answer.
+
+Report:
+
+- How many answers were correct.
+- How many were incorrect.
+- Which questions, if any, were incorrect.
+- Whether the other AI identified any ambiguity.
+- Whether YOU now believe any question is actually ambiguous.
+
+IMPORTANT:
+
+Do NOT automatically assume your original answer key is correct.
+
+If the other AI gives a different answer from your answer key, re-examine the question carefully. Determine whether:
+
+1. Your original answer was wrong.
+2. The other AI was wrong.
+3. The question is genuinely ambiguous.
+
+If a question is genuinely ambiguous, tell me that it should be revised before the quiz is exported.
+
+Only tell me that the quiz has passed verification when you are confident that every question has one clear, defensible answer.
+
+==================================================
+STEP 7 — EXPORT
+==================================================
+
+Once I confirm that the quiz has passed verification, I may ask you to export it to another format, such as Wireclub trivia JSON.
+
+At that point, use the export format/instructions I provide.
+
+Do NOT export to JSON during the initial quiz creation or verification-preparation stages unless I specifically ask you to.
+
+Refernece for wireclub json format:
+------------------------------------
+Wireclub triva file is a json file that user can create offline and import to create a 'Question set'
+The top level object has property "name" which is the name of the quiz.
+When the user imports the json file they can override the name at that time, so the name in the json can be ignored.
+The other property of the top-level object is "questions" which is an array objects.
+Each object always has a "text" property which is the question text, an "explanation" property which is an optional message revealed at the end, and a "type" property that is either the value "multipleChoice" or "writeIn".
+When the value of the "type" property is "multipleChoice",  the object will have two additional properties, "options" which is a string array consisting of the set of multiple choice options, and "correctIndex", referring the index within the array that's the correct answer (zero-based).
+However, if the object is of type "writeIn", it will have an "answer" property which is the correct answer the players need to type in.
+
+The "questions" array should be 10 elements.
+
+The following shows an example of a question set that's only two elements, but shows both type of questions ("multipleChoice" and "writeIn")
+
+{
+  "name": "<quiz name>",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "question test",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Explanation (shown in reveal.  Optional -- leave blank to skip)"
+    },
+    {
+      "type": "writeIn",
+      "text": "Write in question text",
+      "answer": "correct answer that players type in chat.",
+      "explanation": "Explanation (shown in reveal.  Optional -- leave blank to skip)"
+    }
+  ]
+}
+
+Convert the set of questions to json in this format and place it a plaintext codeblock.
+------------------------------------

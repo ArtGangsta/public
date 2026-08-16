@@ -1,0 +1,71 @@
+Wireclub trivia question sets use a JSON file that a user can create offline and import into Wireclub.
+
+The top-level JSON object has two properties:
+
+1. "name" — The name of the quiz.
+   - When the user imports the JSON file, they can replace the quiz name during the import process.
+   - Therefore, the value of "name" in the JSON file can be ignored.
+
+2. "questions" — An array containing the quiz questions.
+   - The array usually contains 10 questions, but it can contain any number of questions.
+   - Each question is an object with these properties:
+     - "text" — The question text. This property is always required.
+     - "explanation" — An optional message that is shown when the answer is revealed. If no explanation is needed, leave this property blank.
+     - "type" — The question type. This must be either "multipleChoice" or "writeIn".
+
+For a "multipleChoice" question:
+
+The question object must also contain:
+
+- "options" — A string array containing all answer choices.
+- "correctIndex" — The zero-based index of the correct answer in the "options" array.
+
+For example, if "options" contains three choices:
+
+"options": [
+  "Option 1",
+  "Option 2",
+  "Option 3"
+]
+
+then:
+
+"correctIndex": 1
+
+means that "Option 2" is the correct answer.
+
+For a "writeIn" question:
+
+The question object must also contain:
+
+- "answer" — The correct answer that players are expected to type in chat.
+
+Example:
+
+{
+  "name": "<quiz name>",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Question text",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Explanation shown when the answer is revealed. Optional; leave blank to skip."
+    },
+    {
+      "type": "writeIn",
+      "text": "Write-in question text",
+      "answer": "Correct answer that players should type in chat.",
+      "explanation": "Explanation shown when the answer is revealed. Optional; leave blank to skip."
+    }
+  ]
+}
+
+Convert the provided set of questions into JSON using exactly this format.
+
+Place the resulting JSON in a plaintext code block.
+

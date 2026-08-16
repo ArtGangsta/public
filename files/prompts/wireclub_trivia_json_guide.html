@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Instructions for creating a Wireclub trivia quiz and converting it to Wireclub-compatible JSON.">
+  <title>Wireclub Trivia — JSON Import Guide</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --border: #dbe1e8;
+      --code-bg: #111827;
+      --code-text: #e5e7eb;
+      --success: #166534;
+      --success-bg: #dcfce7;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      border-radius: 18px;
+      padding: 30px 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, .12);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.7rem, 5vw, 2.5rem);
+      line-height: 1.15;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.05rem;
+      opacity: .94;
+    }
+
+    section, .prompt-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 12px rgba(15, 23, 42, .05);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.35rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      margin: 20px 0 7px;
+      font-size: 1.05rem;
+    }
+
+    p { margin: 0 0 12px; }
+
+    ol {
+      margin: 10px 0 0;
+      padding-left: 1.45rem;
+    }
+
+    li { margin: 8px 0; }
+
+    .note {
+      background: #eff6ff;
+      border-left: 4px solid var(--accent);
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin-top: 16px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    button, .download-link {
+      appearance: none;
+      border: 0;
+      border-radius: 9px;
+      padding: 11px 16px;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform .08s ease, background .15s ease;
+    }
+
+    button:active, .download-link:active {
+      transform: translateY(1px);
+    }
+
+    .primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .primary:hover { background: var(--accent-dark); }
+
+    .secondary {
+      background: #e8edf3;
+      color: var(--text);
+    }
+
+    .secondary:hover { background: #dce3eb; }
+
+    .status {
+      display: inline-block;
+      min-height: 1.5em;
+      margin-left: 4px;
+      color: var(--success);
+      font-weight: 650;
+    }
+
+    .prompt-wrap {
+      position: relative;
+    }
+
+    pre {
+      margin: 0;
+      padding: 18px;
+      background: var(--code-bg);
+      color: var(--code-text);
+      border-radius: 12px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco,
+            Consolas, "Liberation Mono", monospace;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .88rem;
+      padding-top: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: min(100% - 18px, 920px);
+        padding-top: 10px;
+      }
+
+      header, section, .prompt-card {
+        border-radius: 13px;
+        padding: 18px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      button, .download-link {
+        width: 100%;
+        text-align: center;
+      }
+
+      pre {
+        font-size: 12px;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Wireclub Trivia Quiz Guide</h1>
+      <p>Create a trivia quiz with ChatGPT or another AI, then turn it into a Wireclub-ready JSON file.</p>
+    </header>
+
+    <section>
+      <h2>How to use this</h2>
+      <p>You do not need to know anything about JSON or programming. The basic process is:</p>
+
+      <ol>
+        <li><strong>First, create your trivia quiz.</strong> Talk to ChatGPT or another AI and ask it to create a trivia quiz. You can ask for a particular subject, difficulty, number of questions, question types, and so on.</li>
+        <li><strong>Review the quiz.</strong> Continue talking to the AI until you are happy with the questions, answers, and explanations. Make any changes you want before moving on.</li>
+        <li><strong>Copy the conversion prompt below.</strong> This prompt tells the AI exactly how Wireclub's trivia JSON format works.</li>
+        <li><strong>Paste the prompt into the same AI conversation</strong> where your finished quiz was created. Then send it.</li>
+        <li><strong>The AI should return the quiz as JSON.</strong> The JSON must be in a plaintext code block and follow the Wireclub trivia format.</li>
+        <li><strong>Save the JSON as a file</strong> and import that file into Wireclub as a question set.</li>
+      </ol>
+
+      <div class="note">
+        <strong>Important:</strong> Do not use this conversion prompt until you are finished editing your quiz. It is intended to take the quiz you already created and convert it into Wireclub's required JSON format.
+      </div>
+    </section>
+
+    <section>
+      <h2>Quick example of the workflow</h2>
+      <p><strong>Step 1:</strong> Ask an AI: “Create a 10-question trivia quiz about ancient history.”</p>
+      <p><strong>Step 2:</strong> Review the questions and ask the AI to change anything you do not like.</p>
+      <p><strong>Step 3:</strong> Once the quiz is finished, copy the prompt below and paste it into that conversation.</p>
+      <p><strong>Step 4:</strong> The AI converts your finished quiz into Wireclub-compatible JSON.</p>
+      <p><strong>Step 5:</strong> Save the resulting JSON and import it into Wireclub.</p>
+    </section>
+
+    <div class="prompt-card">
+      <h2>Wireclub JSON conversion prompt</h2>
+      <p class="small">Copy this entire prompt and paste it into the AI conversation containing your finished trivia quiz.</p>
+
+      <div class="actions">
+        <button class="primary" type="button" onclick="copyPrompt()">Copy Prompt to Clipboard</button>
+        <a class="download-link secondary" href="#" onclick="downloadPrompt(event)">Download Prompt as .txt</a>
+        <span class="status" id="status" aria-live="polite"></span>
+      </div>
+
+      <div class="prompt-wrap">
+        <pre id="prompt">Wireclub trivia question sets use a JSON file that a user can create offline and import into Wireclub.
+
+The top-level JSON object has two properties:
+
+1. "name" — The name of the quiz.
+   - When the user imports the JSON file, they can replace the quiz name during the import process.
+   - Therefore, the value of "name" in the JSON file can be ignored.
+
+2. "questions" — An array containing the quiz questions.
+   - The array usually contains 10 questions, but it can contain any number of questions.
+   - Each question is an object with these properties:
+     - "text" — The question text. This property is always required.
+     - "explanation" — An optional message that is shown when the answer is revealed. If no explanation is needed, leave this property blank.
+     - "type" — The question type. This must be either "multipleChoice" or "writeIn".
+
+For a "multipleChoice" question:
+
+The question object must also contain:
+
+- "options" — A string array containing all answer choices.
+- "correctIndex" — The zero-based index of the correct answer in the "options" array.
+
+For example, if "options" contains three choices:
+
+"options": [
+  "Option 1",
+  "Option 2",
+  "Option 3"
+]
+
+then:
+
+"correctIndex": 1
+
+means that "Option 2" is the correct answer.
+
+For a "writeIn" question:
+
+The question object must also contain:
+
+- "answer" — The correct answer that players are expected to type in chat.
+
+Example:
+
+{
+  "name": "&lt;quiz name&gt;",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Question text",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Explanation shown when the answer is revealed. Optional; leave blank to skip."
+    },
+    {
+      "type": "writeIn",
+      "text": "Write-in question text",
+      "answer": "Correct answer that players should type in chat.",
+      "explanation": "Explanation shown when the answer is revealed. Optional; leave blank to skip."
+    }
+  ]
+}
+
+Convert the provided set of questions into JSON using exactly this format.
+
+Place the resulting JSON in a plaintext code block.</pre>
+      </div>
+    </div>
+
+    <section>
+      <h2>One more tip</h2>
+      <p>If the AI gives you JSON that looks correct, save <strong>only the JSON itself</strong> as your quiz file. Do not include the surrounding explanation or Markdown code-block markers in the file you import into Wireclub.</p>
+      <p class="small">The “Download Prompt as .txt” button downloads a copy of the conversion prompt. It does not require a web server or any other files.</p>
+    </section>
+
+    <footer>
+      This page is a standalone HTML file. No external scripts, stylesheets, images, or server-side code are required.
+    </footer>
+  </main>
+
+  <script>
+    function getPrompt() {
+      return document.getElementById("prompt").textContent.trim();
+    }
+
+    function showStatus(message) {
+      const status = document.getElementById("status");
+      status.textContent = message;
+      clearTimeout(window._statusTimer);
+      window._statusTimer = setTimeout(() => {
+        status.textContent = "";
+      }, 2500);
+    }
+
+    async function copyPrompt() {
+      const text = getPrompt();
+
+      try {
+        await navigator.clipboard.writeText(text);
+        showStatus("Copied!");
+      } catch (error) {
+        // Fallback for browsers that do not allow navigator.clipboard.
+        const area = document.createElement("textarea");
+        area.value = text;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed";
+        area.style.left = "-9999px";
+        document.body.appendChild(area);
+        area.select();
+
+        try {
+          document.execCommand("copy");
+          showStatus("Copied!");
+        } catch (fallbackError) {
+          showStatus("Copy failed — select and copy the prompt manually.");
+        }
+
+        document.body.removeChild(area);
+      }
+    }
+
+    function downloadPrompt(event) {
+      event.preventDefault();
+
+      const text = getPrompt();
+      const blob = new Blob([text + "\n"], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+
+      link.href = url;
+      link.download = "wireclub_trivia_json_prompt.txt";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      showStatus("Prompt downloaded.");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{
+  "name": "Safari",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which chat member serves as Safari's primary target for lighthearted teasing and sarcastic remarks?",
+      "options": [
+        "Geb",
+        "Max",
+        "Javier",
+        "Maximus"
+      ],
+      "correctIndex": 1,
+      "explanation": "Max is Safari's primary target for lighthearted banter and teasing."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What absurd false identity does Max try to pass off to Safari that she immediately refuses to fall for?",
+      "options": [
+        "Gebediah",
+        "Maximus Autisticus",
+        "Wild Man",
+        "Bellwhiff"
+      ],
+      "correctIndex": 1,
+      "explanation": "Max attempts to pass himself off as Javier or Maximus Autisticus, but Safari sees right through it."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "How does Safari fondly describe Geb's pale, freckled skin?",
+      "options": [
+        "Like expired sunscreen",
+        "Like a sleep paralysis demon",
+        "A bunch of freckles all holding hands",
+        "A classic British sunburn"
+      ],
+      "correctIndex": 2,
+      "explanation": "Safari pokes fun at Geb's pale skin by describing it as a bunch of freckles all holding hands."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "When Geb brags about learning to juggle, how does Safari instantly deflate his confidence?",
+      "options": [
+        "\"Oh, Geb, trust me. We know.\"",
+        "\"You're a real ride, Geb.\"",
+        "\"Stick to horseback riding.\"",
+        "\"Be sweet, Gebediah.\""
+      ],
+      "correctIndex": 0,
+      "explanation": "Safari immediately deflates Geb's bragging with her deadpan reply."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What awkward line did Geb use on a girl that Safari declared \"should have landed him a slap\"?",
+      "options": [
+        "Calling her a \"wild man\"",
+        "Telling her she was better-looking than his dog",
+        "Asking her to go horseback riding",
+        "Commenting on her exposed ankle"
+      ],
+      "correctIndex": 1,
+      "explanation": "Geb told a girl she was better-looking than his dog, which Safari noted deserved a big slap."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What random, ridiculous suggestion does Max throw out, telling Safari she needs to try it?",
+      "options": [
+        "Juggling",
+        "Horseback riding",
+        "Using 8-year-old sunscreen",
+        "Stimming over quizzes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Max randomly suggests that Safari needs to go horseback riding."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What physical feature of Geb's did Safari tease him about exposing to the entire chat room?",
+      "options": [
+        "His wrist",
+        "His ankle",
+        "His elbow",
+        "His knee"
+      ],
+      "correctIndex": 1,
+      "explanation": "Safari pokes fun at the time Geb exposed his ankle to the chat."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "When Max acts like a \"wild man\" or uses crass terms, how does Safari usually respond to keep him in line?",
+      "options": [
+        "By threatening to block him",
+        "By telling him to \"be sweet\"",
+        "By challenging him to a trivia quiz",
+        "By ignoring him completely"
+      ],
+      "correctIndex": 1,
+      "explanation": "Safari typically reminds Max to 'be sweet' or not be mean."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What does Max accuse Safari of doing when she gets overly focused on chat games?",
+      "options": [
+        "Sleeping through the banter",
+        "Stimming over quizzes",
+        "Unleashing her inner freak",
+        "Acting like Gebediah"
+      ],
+      "correctIndex": 1,
+      "explanation": "Max accuses Safari of stimming over quizzes."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Overall, what role does Safari play while navigating through Max and Geb's chaotic antics?",
+      "options": [
+        "The unhinged chaotic comedian",
+        "The cool, unimpressed anchor",
+        "The naive newcomer",
+        "The background spectator"
+      ],
+      "correctIndex": 1,
+      "explanation": "Safari acts as the cool, unimpressed anchor keeping the chat grounded."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "name": "Generations",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "\u201CIt\u2019s giving\u201D",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u201CTotally!\u201D",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u201CGroovy\u201D",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u0022That\u2019s so fetch\u0022",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u201CNo cap\u201D",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u0022Whatever\u0022",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u201CYOLO!\u201D",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u0022Fanum Tax\u0022",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u0022Far out!\u0022",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "type": "multipleChoice",
+      "text": "\u201CAs if!\u201D",
+      "options": [
+        "Boomers",
+        "Gen-X",
+        "Millennials",
+        "Gen Z",
+        "Gen Alpha"
+      ],
+      "correctIndex": 1
+    }
+  ]
+}

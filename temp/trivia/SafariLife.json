@@ -1,0 +1,125 @@
+{
+  "name": "SafariLife Trivia",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Who gave SafariLife the Trivia Buff badge?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 0,
+      "explanation": "Daydreamer51 gave SafariLife the Trivia Buff badge."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who gave SafariLife the Pride badge about one month ago?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ms_Ree gave SafariLife the Pride badge."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who jokingly commented, “Yes she has 😉” after someone asked whether Safari had been flirting in chat?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 2,
+      "explanation": "Not_Ghosty replied, “Yes she has 😉” to the question about Safari flirting in chat."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who gave SafariLife the Lucky Coin badge?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ms_Ree gave SafariLife the Lucky Coin badge."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who gave SafariLife several St. Patrick’s Day-themed badges, including the Win, Charming, and Chill badges?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 2,
+      "explanation": "Not_Ghosty gave SafariLife the Win, Charming, Box of Chocolates, and Chill badges around St. Patrick’s Day."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who gave SafariLife the Hot Chocolate badge along with an elaborate holiday greeting in late 2025?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 3,
+      "explanation": "WWdubyaINFINITUM gave SafariLife the Hot Chocolate badge and posted an elaborate holiday greeting."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who received a Shenanigans badge from SafariLife and replied with 🤘🤙?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reign1999 received the Shenanigans badge and replied with 🤘🤙."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who gave SafariLife the Easter Egg badge and later received a Box of Chocolates badge from her?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ms_Ree gave SafariLife the Easter Egg badge, and SafariLife later gave Ms_Ree the Box of Chocolates badge."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who gave SafariLife the Big Heart badge multiple times, including during the past several months?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 0,
+      "explanation": "Daydreamer51 gave SafariLife the Big Heart badge multiple times."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Who jokingly complained “Where's my badge?” after SafariLife received the Mysterious badge?",
+      "options": [
+        "Daydreamer51",
+        "Ms_Ree",
+        "Not_Ghosty",
+        "WWdubyaINFINITUM"
+      ],
+      "correctIndex": 3,
+      "explanation": "WWdubyaINFINITUM jokingly asked, “Where's my badge?” after SafariLife received the Mysterious badge."
+    }
+  ]
+}

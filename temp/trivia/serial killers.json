@@ -1,0 +1,125 @@
+{
+  "name": "Serial Killer",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Aileen Wuornos — what was her primary method of killing?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aileen Wuornos was responsible for seven confirmed murders, all committed by shooting."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Nannie Doss — what was her primary method of killing?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Nannie Doss was known for poisoning victims, particularly members of her own family."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Gary Ridgway — what was his primary method of killing?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Gary Ridgway, known as the Green River Killer, primarily killed his victims by strangulation."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Jack the Ripper — what was the primary method associated with the murders attributed to him?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 3,
+      "explanation": "The murders attributed to Jack the Ripper involved extensive knife attacks and are most commonly associated with stabbing."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "David Berkowitz (Son of Sam) — what was his primary method of killing?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 0,
+      "explanation": "David Berkowitz used a firearm in the shootings that became known as the Son of Sam murders."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Harold Shipman — what was his primary method of killing?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Harold Shipman killed his victims by administering lethal doses of drugs, particularly morphine."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "John Wayne Gacy — what was his primary method of killing?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Most of John Wayne Gacy's victims were killed through asphyxiation, including strangulation."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Jeffrey Dahmer — what was his primary method of killing?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Jeffrey Dahmer primarily killed his victims through asphyxiation."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Charles Cullen — what was his primary method of killing?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Charles Cullen, a nurse, killed patients by administering excessive or inappropriate doses of medications."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Pedro López — which method is most commonly associated with his confirmed killings?",
+      "options": [
+        "Shooting",
+        "Poisoning / drug overdose",
+        "Strangulation / asphyxiation",
+        "Stabbing"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pedro López was convicted of multiple murders involving stabbing, although accounts of his crimes describe more than one method."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+=====================
+Create a trivia quiz according to the following rules.
+
+FIRST, ASK ME THESE TWO QUESTIONS BEFORE CREATING THE QUIZ:
+
+1. "How many questions would you like? (10 is recommended, but you can choose any number.)"
+
+2. "How many answer choices would you like for each question? (Choose 4, 5, or 6.)"
+
+Wait for my answers before creating the quiz.
+
+QUIZ DESIGN:
+
+- Create exactly the number of questions I specify.
+- Use exactly the number of answer choices I specify for every question.
+- Each question should follow the same basic question pattern.
+- Use the exact same set of answer choices for every question unless there is a compelling reason not to.
+- Each question must have exactly one correct answer.
+- The correct answer should vary from question to question and be reasonably balanced among the available choices.
+- Avoid an obvious pattern in the placement of correct answers.
+- Answer choices should be plausible and clearly distinct.
+- Choose examples where the correct answer is well-established and not controversial or ambiguous.
+- Prefer famous, recognizable examples rather than obscure ones.
+- If a subject can have multiple possible answers, choose an example where one answer is clearly the primary, most characteristic, or best-known answer.
+- Don't use an example merely because it technically fits; the answer should make good trivia.
+- Keep questions concise and easy to read in a chat room.
+- Don't give away the answer through the wording of the question.
+
+BEFORE PRESENTING THE FINAL QUIZ, CHECK EVERY QUESTION:
+
+1. The named subject actually fits the question.
+2. The designated answer is factually correct.
+3. None of the other choices could reasonably be considered correct.
+4. The correct answers are reasonably distributed among the available choices.
+5. The questions aren't accidentally repetitive.
+6. The quiz is entertaining and appropriate for a general trivia audience.
+
+FORMAT:
+
+1. [Question]
+   A. [choice]
+   B. [choice]
+   C. [choice]
+   D. [choice]
+   [Additional choices if applicable]
+
+Repeat for the requested number of questions.
+
+Then provide:
+
+ANSWER KEY:
+1. [letter] — [answer]
+2. [letter] — [answer]
+3. [letter] — [answer]
+etc.
+
+IMPORTANT:
+Do NOT create JSON yet. First create and verify the quiz itself. I may ask you to revise the quiz before converting it to Wireclub JSON.
+
+If I subsequently ask you to convert the quiz to Wireclub trivia JSON, use the Wireclub JSON format I provide and preserve the questions, choices, correct answers, and explanations exactly.
+=====================
+
+
+
+
+
+=====================
+Wireclub triva file is a json file that user can create offline and import to create a 'Question set'
+The top level object has property "name" which is the name of the quiz.
+When the user imports the json file they can override the name at that time, so the name in the json can be ignored.
+The other property of the top-level object is "questions" which is an array objects.
+Each object always has a "text" property which is the question text, an "explanation" property which is an optional message revealed at the end, and a "type" property that is either the value "multipleChoice" or "writeIn".
+When the value of the "type" property is "multipleChoice",  the object will have two additional properties, "options" which is a string array consisting of the set of multiple choice options, and "correctIndex", referring the index within the array that's the correct answer (zero-based).
+However, if the object is of type "writeIn", it will have an "answer" property which is the correct answer the players need to type in.
+
+The "questions" array should be 10 elements.
+
+The following shows an example of a question set that's only two elements, but shows both type of questions ("multipleChoice" and "writeIn")
+
+{
+  "name": "<quiz name>",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "question test",
+      "options": [
+        "Option 1",
+        "Option 2",
+        "Option 3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Explanation (shown in reveal.  Optional -- leave blank to skip)"
+    },
+    {
+      "type": "writeIn",
+      "text": "Write in question text",
+      "answer": "correct answer that players type in chat.",
+      "explanation": "Explanation (shown in reveal.  Optional -- leave blank to skip)"
+    }
+  ]
+}
+
+Convert the set of questions to json in this format and place it a plaintext codeblock.
