@@ -1,0 +1,29 @@
+{
+  "name": "Hookup Culture",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which book argues that the real problem with hookup culture is not promiscuity but the way purity ethics are used to police young women\u0027s sexuality?",
+      "options": [
+        "\u0022The Purity Myth\u0022",
+        "\u0022The Mating Mind\u0022",
+        "\u0022Sex at Dawn\u0022",
+        "\u0022The End of Courtship\u0022"
+      ],
+      "correctIndex": 0,
+      "explanation": "\u0022The Purity Myth\u0022 is a feminist critique of abstinence-only education and the moral panic around hookup culture, while Jessica Valenti\u0027s other works include \u0022Full Frontal Feminism\u0022 and \u0022Why Have Kids?\u0022"
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which 2009 film features a male lead whose professional life revolves around giving advice on casual hookups and dating?",
+      "options": [
+        "\u0022The Ugly Truth\u0022",
+        "\u0022Love Actually\u0022",
+        "\u0022Friends with Benefits\u0022",
+        "\u0022No Strings Attached\u0022"
+      ],
+      "correctIndex": 0,
+      "explanation": "In the 2009 film \u0027The Ugly Truth\u0027, the male lead character is a TV producer who uses the premise of hookups and casual dating advice as a professional angle, making it a central location/setting for the film\u0027s commentary on hookup culture."
+    }
+  ]
+}

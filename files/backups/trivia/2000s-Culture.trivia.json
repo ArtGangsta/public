@@ -1,0 +1,41 @@
+{
+  "name": "2000s Culture",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which band released the debut album \u0027Parachutes\u0027 in the year 2000?",
+      "options": [
+        "Radiohead",
+        "Muse",
+        "Travis",
+        "Coldplay"
+      ],
+      "correctIndex": 3,
+      "explanation": "Coldplay\u0027s first album, \u0027Parachutes\u0027, was released in July 2000."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In 2004, which animated film featured a soundtrack that included the song \u0027Accidentally in Love\u0027 by Counting Crows?",
+      "options": [
+        "The Incredibles",
+        "Shark Tale",
+        "Shrek 2",
+        "Madagascar"
+      ],
+      "correctIndex": 2,
+      "explanation": "\u0027Accidentally in Love\u0027 was the lead single from the soundtrack of Shrek 2."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which fictional city is the 2004 film \u0027The Incredibles\u0027 primarily set?",
+      "options": [
+        "Metroville",
+        "Coast City",
+        "Metropolis",
+        "Gotham City"
+      ],
+      "correctIndex": 0,
+      "explanation": "Metroville is the primary setting of Pixar\u0027s \u0027The Incredibles\u0027, a fictional city distinct from other comic-book cities."
+    }
+  ]
+}

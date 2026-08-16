@@ -1,0 +1,125 @@
+{
+  "name": "Women\u0027s Anatomy",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "What is the only organ in the human body dedicated entirely and exclusively to pleasure?",
+      "options": [
+        "The cervix",
+        "The clitoris",
+        "The uterus",
+        "The labia majora"
+      ],
+      "correctIndex": 1,
+      "explanation": "The clitoris contains over 8,000 to 10,000 sensory nerve endings and exists solely to provide sensory pleasure!"
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which powerful muscular organ, responsible for bringing new life into the world, can expand its internal capacity up to 500 times during pregnancy?",
+      "options": [
+        "The bladder",
+        "The stomach",
+        "The uterus",
+        "The vagina"
+      ],
+      "correctIndex": 2,
+      "explanation": "Made of remarkably strong smooth muscle tissue, the uterus grows from the size of a small pear to holding a full-term baby."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What internal parts of the clitoris (known as the \u0027legs\u0027) extend deep inside the pelvis, wrapping around the vaginal structures like an iceberg beneath the surface?",
+      "options": [
+        "The crura",
+        "The fallopian tubes",
+        "The ovaries",
+        "The broad ligaments"
+      ],
+      "correctIndex": 0,
+      "explanation": "Most of the clitoris is hidden internally, with its erectile tissue \u0027legs\u0027 (crura) spanning up to 4 inches inside the pelvis."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the name of the dynamic internal canal that is self-cleaning, expands during arousal and childbirth, and is lined with healthy, protective bacteria?",
+      "options": [
+        "The urethra",
+        "The vulva",
+        "The vagina",
+        "The perineum"
+      ],
+      "correctIndex": 2,
+      "explanation": "The internal vaginal canal is an extraordinary self-cleaning environment\u2014no special soaps needed!"
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which self-regulating acidic level does a healthy vagina maintain to naturally protect itself against harmful bacteria and infections?",
+      "options": [
+        "pH 1.0\u20132.0",
+        "pH 3.8\u20134.5",
+        "pH 7.0\u20137.5",
+        "pH 9.0\u201310.0"
+      ],
+      "correctIndex": 1,
+      "explanation": "The vagina maintains a naturally acidic environment driven by beneficial Lactobacillus bacteria to ward off pathogens."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What flexible ring-shaped structure serves as the doorway or bridge connecting the vagina to the uterus?",
+      "options": [
+        "The cervix",
+        "The endometrium",
+        "The hymen",
+        "The ovarian ligament"
+      ],
+      "correctIndex": 0,
+      "explanation": "The cervix produces fluid that changes throughout your cycle to assist or block sperm and widens to 10 cm during childbirth."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What remarkable glands located near the vaginal opening are responsible for secreting lubricating fluid during arousal?",
+      "options": [
+        "Thyroid glands",
+        "Adrenal glands",
+        "Bartholin\u2019s glands",
+        "Pituitary glands"
+      ],
+      "correctIndex": 2,
+      "explanation": "Located on either side of the vaginal opening, these tiny powerhouses secrete fluid to keep things smooth and comfortable."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which term refers to the entire outer, visible female genitalia, including the labia, clitoral hood, and mons pubis?",
+      "options": [
+        "Vagina",
+        "Cervix",
+        "Vulva",
+        "Endometrium"
+      ],
+      "correctIndex": 2,
+      "explanation": "\u0027Vagina\u0027 refers strictly to the internal canal, while \u0027vulva\u0027 encompasses all the outer anatomical features."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which miraculous organs hold a female\u0027s entire lifetime supply of eggs, right from the moment she is born?",
+      "options": [
+        "The fallopian tubes",
+        "The ovaries",
+        "The kidneys",
+        "The adrenal glands"
+      ],
+      "correctIndex": 1,
+      "explanation": "Females are born with around 1 to 2 million immature eggs in their ovaries, containing all the genetic potential for future generations from day one."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What type of super-supportive muscle group spans the bottom of the pelvis to cradle and support the bladder, uterus, and bowels?",
+      "options": [
+        "Pelvic floor muscles",
+        "Abdominal rectus muscles",
+        "Gluteal muscles",
+        "Intercostal muscles"
+      ],
+      "correctIndex": 0,
+      "explanation": "This hammock-like layer of muscles supports core stability, organ health, and sexual function."
+    }
+  ]
+}

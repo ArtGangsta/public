@@ -1,0 +1,125 @@
+{
+  "name": "Rule of Threes",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "According to the survival Rule of Threes, which inability does a person typically succumb to first?",
+      "options": [
+        "Without a reliable food source",
+        "Without breathable air",
+        "Without a way to signal for help",
+        "Without shelter in extreme conditions"
+      ],
+      "correctIndex": 1,
+      "explanation": "The \u0027Rule of Threes\u0027 is a survival rule of thumb that states a person can survive for approximately 3 minutes without air, 3 hours without shelter in extreme conditions, 3 days without water, and 3 weeks without food."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the survival Rule of Threes, what is the shortest time frame a person can typically endure being without?",
+      "options": [
+        "running out of stored food",
+        "failing to find potable water",
+        "being deprived of oxygen",
+        "exposure to extreme weather"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Rule of Threes survival guideline states that a person can survive about 3 minutes without air, 3 hours without shelter in extreme conditions, 3 days without water, and 3 weeks without food. So the first limit is breathing."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "According to the survival Rule of Threes, what is the maximum amount of time a person can typically survive without breathable air?",
+      "options": [
+        "3 weeks",
+        "3 minutes",
+        "3 hours",
+        "3 days"
+      ],
+      "correctIndex": 1,
+      "explanation": "The correct answer is that, according to the survival Rule of Threes, a person can typically survive 3 minutes without breathable air."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which famous trio, often cited as a foundational slogan, is most directly associated with the U.S. Declaration of Independence?",
+      "options": [
+        "Peace, order, and good government",
+        "Life, liberty, and the pursuit of happiness",
+        "Blood, sweat, and tears",
+        "Faith, hope, and charity"
+      ],
+      "correctIndex": 1,
+      "explanation": "The correct answer is \u0027Life, liberty, and the pursuit of happiness,\u0027 which is the famous trio of unalienable rights listed in the U.S. Declaration of Independence. This fits the Rule of Threes theme of triads and is a well-known historical slogan."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the spirit of the Rule of Threes, which well-known three-word safety principle is taught to prevent falls?",
+      "options": [
+        "Three points of contact",
+        "Mind, body, spirit",
+        "Location, location, location",
+        "No justice, no peace"
+      ],
+      "correctIndex": 0,
+      "explanation": "This correct option points to the safety axiom \u0027Three points of contact\u0027 \u2014 a rule of three from occupational safety that predates and parallels the survival Rule of Threes, while the other options are famous triadic slogans from unrelated domains."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "According to the survival Rule of Threes, about how long can the average person typically survive in extreme weather conditions without adequate shelter?",
+      "options": [
+        "3 hours without shelter",
+        "3 days without water",
+        "3 weeks without food",
+        "3 months without hope"
+      ],
+      "correctIndex": 0,
+      "explanation": "In emergency preparedness, the Rule of Threes states a person can survive about 3 hours in extreme weather exposure without shelter before hypothermia or heatstroke sets in, making shelter the immediate priority after air, water, and food."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "According to the survival Rule of Threes, how long can a person typically survive without water?",
+      "options": [
+        "3 years",
+        "3 decades",
+        "3 months",
+        "3 days"
+      ],
+      "correctIndex": 3,
+      "explanation": "The Rule of Threes in survival states you can survive 3 minutes without air, 3 hours without shelter in extreme conditions, 3 days without water, and 3 weeks without food; the order listed is the typical sequence of decline."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "According to the survival Rule of Threes, which setting typically allows a person to last the longest period before succumbing?",
+      "options": [
+        "3 minutes without air",
+        "3 days without water",
+        "3 hours without shelter",
+        "3 weeks without food"
+      ],
+      "correctIndex": 3,
+      "explanation": "The Rule of Threes states that a person can survive roughly 3 minutes without air, 3 hours without shelter in extreme conditions, 3 days without water, and 3 weeks without food. The question asks for the longest survival time, which is 3 weeks without food."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which phobia is specifically defined as the fear of the number 13?",
+      "options": [
+        "Triskaidekaphobia",
+        "Arachnophobia",
+        "Claustrophobia",
+        "Hippopotomonstrosesquippedaliophobia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Triskaidekaphobia is the fear of the number 13, which is directly related to the cultural and superstitious concept of a \u0027baker\u0027s dozen\u0027 (13) being unlucky, not part of the survival or civil rights Rule of Threes."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which survival expert is credited with popularizing the survival Rule of Threes in their field manual?",
+      "options": [
+        "Bear Grylls",
+        "Lofty Wiseman",
+        "Les Stroud",
+        "Ray Mears"
+      ],
+      "correctIndex": 1,
+      "explanation": "While the Rule of Threes is widely used as a survival guideline, it was popularized in modern survival circles by former British SAS soldier and wilderness expert Lofty Wiseman, who outlined the principle in his book \u0027The SAS Survival Handbook.\u0027"
+    }
+  ]
+}

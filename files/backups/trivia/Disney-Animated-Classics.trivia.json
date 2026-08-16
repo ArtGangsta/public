@@ -1,0 +1,125 @@
+{
+  "name": "Disney Animated Classics",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "What is the name of the iconic savanna landmark where Mufasa rules over the animal kingdom in a classic Disney animated film?",
+      "options": [
+        "Arendelle",
+        "Pride Rock",
+        "Neverland",
+        "Wonderland"
+      ],
+      "correctIndex": 1,
+      "explanation": "In Disney\u0027s The Lion King (1994), Pride Rock is the iconic cliffside location where Simba is presented to the animal kingdom and where the story\u0027s leadership is centered."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the name of the underwater kingdom ruled by King Triton in a classic Disney animated film?",
+      "options": [
+        "Mermaid Lagoon",
+        "Coral Cove",
+        "Atlantica",
+        "Neptune\u0027s Realm"
+      ],
+      "correctIndex": 2,
+      "explanation": "The question asks about the name of the underwater kingdom in \u0027The Little Mermaid.\u0027"
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which 1930s singer voiced the title character in Disney\u0027s first full-length animated feature film?",
+      "options": [
+        "Judy Garland",
+        "Adriana Caselotti",
+        "Shirley Temple",
+        "Deanna Durbin"
+      ],
+      "correctIndex": 1,
+      "explanation": "Walt Disney personally selected Adriana Caselotti to voice Snow White in 1937\u0027s Snow White and the Seven Dwarfs, making her the first feature-length animated film voice actress."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the exact runtime, in minutes, of Disney\u0027s first full-length animated feature film?",
+      "options": [
+        "84 minutes",
+        "83 minutes",
+        "81 minutes",
+        "82 minutes"
+      ],
+      "correctIndex": 1,
+      "explanation": "This question targets a specific, non-obvious fact about Disney\u0027s first full-length animated feature, Snow White and the Seven Dwarfs, which is 83 minutes long. This is a moderate detail that a fan would likely know, exploring the specific angle of numbers."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What was the title of the first Disney animated feature film?",
+      "options": [
+        "Cinderella",
+        "Sleeping Beauty",
+        "Snow White and the Seven Dwarfs",
+        "Beauty and the Beast"
+      ],
+      "correctIndex": 2,
+      "explanation": "The first Disney animated feature film was Snow White and the Seven Dwarfs, released in 1937."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which Disney animated feature was the first to be released after the death of Walt Disney?",
+      "options": [
+        "The Jungle Book",
+        "The Sword in the Stone",
+        "One Hundred and One Dalmatians",
+        "The Aristocats"
+      ],
+      "correctIndex": 0,
+      "explanation": "The first full-length animated feature film released after Walt Disney\u0027s death was The Jungle Book (1967), which premiered about ten months after he passed away in December 1966."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "By what deadline must the Beast break the spell in Disney\u0027s \u0027Beauty and the Beast\u0027?",
+      "options": [
+        "Before the winter solstice of that year",
+        "Before three full moons have passed",
+        "Before the last petal of an enchanted rose falls",
+        "Before the sun sets on his twenty-first birthday"
+      ],
+      "correctIndex": 2,
+      "explanation": "The curse in Disney\u0027s \u0027Beauty and the Beast\u0027 requires the Beast to learn to love and be loved in return before the last petal of an enchanted rose falls; if he fails, he remains a beast forever."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which performer provided the voice for the title character in Walt Disney\u0027s first full-length animated feature film?",
+      "options": [
+        "Jodi Benson",
+        "Mary Costa",
+        "Adriana Caselotti",
+        "Ilene Woods"
+      ],
+      "correctIndex": 2,
+      "explanation": "Adriana Caselotti provided the speaking and singing voice for Snow White in Disney\u0027s first animated feature, \u0027Snow White and the Seven Dwarfs\u0027 (1937)."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which Disney animated classic includes the phrase \u0027Hakuna Matata\u0027?",
+      "options": [
+        "The Little Mermaid",
+        "Aladdin",
+        "Beauty and the Beast",
+        "The Lion King"
+      ],
+      "correctIndex": 3,
+      "explanation": "The question asks which Disney animated film features the line \u0027Hakuna Matata,\u0027 which is a famous quote from The Lion King."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which animator is credited as the sole director of Disney\u0027s 1940 film \u0027Fantasia\u0027?",
+      "options": [
+        "None; Walt Disney oversaw the film without a single credited director",
+        "Ben Sharpsteen",
+        "Bill Roberts",
+        "Hamilton Luske"
+      ],
+      "correctIndex": 0,
+      "explanation": "Which animator is credited as the sole director of Disney\u0027s 1940 film \u0027Fantasia\u0027? None \u2014 the film had no single director; it was overseen by Walt Disney himself with multiple sequence directors."
+    }
+  ]
+}

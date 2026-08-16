@@ -1,0 +1,125 @@
+{
+  "name": "Periods",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "What is the name of the functional inner lining of the uterus that thickens every cycle and sheds during a period?",
+      "options": [
+        "Myometrium",
+        "Endometrium",
+        "Perimetrium",
+        "Epimetrium"
+      ],
+      "correctIndex": 1,
+      "explanation": "The endometrium is the functional lining that thickens in response to hormones and breaks down during menstruation."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "During a typical 28-day menstrual cycle, which hormone surges dramatically around Day 14 to trigger ovulation?",
+      "options": [
+        "Progesterone",
+        "Human Chorionic Gonadotropin (hCG)",
+        "Luteinizing Hormone (LH)",
+        "Oxytocin"
+      ],
+      "correctIndex": 2,
+      "explanation": "A sharp surge in LH causes the mature follicle to rupture and release an egg (ovulation)."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the medical term for painful menstrual cramps caused by uterine muscle contractions?",
+      "options": [
+        "Dysmenorrhea",
+        "Amenorrhea",
+        "Menorrhagia",
+        "Oligomenorrhea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dysmenorrhea is the medical term for menstrual cramps."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What hormone-like chemical compounds are produced by the uterine lining to prompt the muscle contractions that shed the tissue?",
+      "options": [
+        "Endorphins",
+        "Prostaglandins",
+        "Cytokines",
+        "Histamines"
+      ],
+      "correctIndex": 1,
+      "explanation": "Prostaglandins trigger uterine contractions to help shed the lining."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Roughly how much fluid (blood combined with mucosal tissue) does a woman typically lose during an entire normal period?",
+      "options": [
+        "2 to 3 tablespoons (30 to 45 mL)",
+        "1 to 2 cups (240 to 480 mL)",
+        "3 to 4 cups (720 to 960 mL)",
+        "1 gallon (3,785 mL)"
+      ],
+      "correctIndex": 0,
+      "explanation": "The average total fluid loss during a normal period is surprisingly only about 2 to 3 tablespoons (30 to 45 mL)."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the anatomical term for the first menstrual period a person experiences in their lifetime?",
+      "options": [
+        "Menopause",
+        "Menarche",
+        "Thelarche",
+        "Adrenarche"
+      ],
+      "correctIndex": 1,
+      "explanation": "Menarche is the term for a person\u0027s first menstrual period."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "The menstrual cycle is divided into phases. Which phase comes immediately after menstruation, during which follicles in the ovary mature?",
+      "options": [
+        "Luteal phase",
+        "Follicular phase",
+        "Secretory phase",
+        "Ischemic phase"
+      ],
+      "correctIndex": 1,
+      "explanation": "The follicular phase begins on Day 1 of menstruation and continues until ovulation as follicles mature."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "After an egg is released, the ruptured ovarian follicle transforms into a temporary endocrine structure that produces progesterone. What is this structure called?",
+      "options": [
+        "Corpus callosum",
+        "Corpus albicans",
+        "Corpus luteum",
+        "Corpus cavernosum"
+      ],
+      "correctIndex": 2,
+      "explanation": "The corpus luteum (\u0027yellow body\u0027) produces progesterone to prepare the uterus for potential pregnancy."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What term refers to the mild, one-sided lower abdominal pain or cramping some women experience right at the moment of ovulation?",
+      "options": [
+        "Mittelschmerz",
+        "Dyspareunia",
+        "Lochia",
+        "Vulvodynia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mittelschmerz is German for \u0027middle pain\u0027 and refers to ovulation discomfort."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which organ releases Gonadotropin-Releasing Hormone (GnRH) to kick off the entire hormonal cascade of the menstrual cycle?",
+      "options": [
+        "Thyroid gland",
+        "Adrenal cortex",
+        "Hypothalamus",
+        "Pancreas"
+      ],
+      "correctIndex": 2,
+      "explanation": "The hypothalamus releases GnRH, triggering the pituitary gland to release FSH and LH."
+    }
+  ]
+}

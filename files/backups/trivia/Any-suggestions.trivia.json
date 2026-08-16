@@ -1,0 +1,125 @@
+{
+  "name": "Any suggestions",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "In the 1939 film The Wizard of Oz, what line does Dorothy say to return to Kansas?",
+      "options": [
+        "I\u0027ll get you, my pretty, and your little dog too!",
+        "Follow the yellow brick road.",
+        "Eeny, meeny, miny, moe.",
+        "There\u0027s no place like home."
+      ],
+      "correctIndex": 3,
+      "explanation": "In the movie \u0027The Wizard of Oz,\u0027 Dorothy famously clicks her heels together and repeats the line, \u0027There\u0027s no place like home\u0027 to return to Kansas."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the title of F. Scott Fitzgerald\u0027s famous 1925 novel about the enigmatic millionaire Jay Gatsby?",
+      "options": [
+        "The Catcher in the Rye",
+        "The Great Gatsby",
+        "To Kill a Mockingbird",
+        "Moby-Dick"
+      ],
+      "correctIndex": 1,
+      "explanation": "The correct title is \u0027The Great Gatsby\u0027 by F. Scott Fitzgerald, a classic American novel set in the Jazz Age."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In which modern-day city would you find the ancient Colosseum?",
+      "options": [
+        "Athens, Greece",
+        "Rome, Italy",
+        "Istanbul, Turkey",
+        "Cairo, Egypt"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Colosseum is an ancient amphitheater in Rome, Italy, famous for gladiatorial contests."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which iconic cartoon character was originally voiced by its creator, Walt Disney?",
+      "options": [
+        "Popeye",
+        "Mickey Mouse",
+        "Bugs Bunny",
+        "Donald Duck"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mickey Mouse was created by Walt Disney and Ub Iwerks, first appearing in the 1928 short film Steamboat Willie."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which volcano famously erupted in 79 AD, burying the Roman city of Pompeii?",
+      "options": [
+        "Mount Kilimanjaro",
+        "Mount Fuji",
+        "Mount Etna",
+        "Mount Vesuvius"
+      ],
+      "correctIndex": 3,
+      "explanation": "The eruption of Mount Vesuvius in 79 AD destroyed Pompeii and Herculaneum."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which painting by a Spanish surrealist artist features melting clocks as a central image?",
+      "options": [
+        "Guernica",
+        "Starry Night",
+        "The Persistence of Memory",
+        "The Night Watch"
+      ],
+      "correctIndex": 2,
+      "explanation": "The painting \u0027The Persistence of Memory\u0027 by Salvador Dal\u00ED, painted in 1931, is universally recognized for its melting clocks, a surrealist motif that symbolizes the relativity of time."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In Mary Shelley\u0027s novel \u0027Frankenstein\u0027, what is the primary setting for the story\u0027s final scenes?",
+      "options": [
+        "The Amazon Rainforest",
+        "The Andes Mountains",
+        "The Sahara Desert",
+        "The Arctic"
+      ],
+      "correctIndex": 3,
+      "explanation": "The correct answer is the novel \u0022Frankenstein\u0022 because Mary Shelley\u0027s story is set in the Arctic, where the main plot elements and the final confrontation between Victor Frankenstein and his creature take place."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which ancient artifact, discovered in 1799, was created in 196 BC?",
+      "options": [
+        "The Great Pyramid of Giza",
+        "The Rosetta Stone",
+        "The Sphinx of Giza",
+        "The Bust of Nefertiti"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Rosetta Stone, which was key to deciphering Egyptian hieroglyphs, was created in 196 BC during the Ptolemaic dynasty."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In J.R.R. Tolkien\u0027s \u0027The Lord of the Rings\u0027, in what location was the One Ring forged?",
+      "options": [
+        "The Grey Havens",
+        "The Mines of Moria",
+        "Rivendell",
+        "Mount Doom"
+      ],
+      "correctIndex": 3,
+      "explanation": "In J.R.R. Tolkien\u0027s The Lord of the Rings, the One Ring was forged in the fires of Mount Doom, a volcano located in the dark land of Mordor."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which fictional character was the first to receive a star on the Hollywood Walk of Fame?",
+      "options": [
+        "Donald Duck",
+        "Mickey Mouse",
+        "PL Travers",
+        "Walt Disney"
+      ],
+      "correctIndex": 1,
+      "explanation": "In 1928, Walt Disney created Mickey Mouse and provided his voice."
+    }
+  ]
+}

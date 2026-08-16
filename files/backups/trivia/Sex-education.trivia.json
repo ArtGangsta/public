@@ -1,0 +1,125 @@
+{
+  "name": "Sex education",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "How many pairs of chromosomes do humans typically have in each body cell?",
+      "options": [
+        "23 pairs",
+        "22 pairs",
+        "21 pairs",
+        "24 pairs"
+      ],
+      "correctIndex": 0,
+      "explanation": "The correct answer is 23 pairs. Humans have 23 pairs of chromosomes, for a total of 46, in nearly all body cells. This is a standard fact in biology and sex education."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which hormone is primarily responsible for the production of sperm in males?",
+      "options": [
+        "Prolactin",
+        "Estrogen",
+        "Progesterone",
+        "Testosterone"
+      ],
+      "correctIndex": 3,
+      "explanation": "The correct answer is \u0027Testosterone\u0027 because it is the primary male sex hormone responsible for sperm production and male secondary sexual characteristics, while estrogen and progesterone are the main female sex hormones."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the term for the release of an egg from an ovary?",
+      "options": [
+        "Implantation",
+        "Menstruation",
+        "Ovulation",
+        "Fertilization"
+      ],
+      "correctIndex": 2,
+      "explanation": "The process by which a female egg cell is released from the ovary is called ovulation, a key part of the menstrual cycle."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which sexually transmitted infection is caused by a bacterium and is the most commonly reported bacterial STI in many parts of the world?",
+      "options": [
+        "Syphilis",
+        "Genital herpes",
+        "Chlamydia",
+        "Gonorrhea"
+      ],
+      "correctIndex": 2,
+      "explanation": "Chlamydia is the correct answer because it is the most commonly reported bacterial sexually transmitted infection in many countries, vastly more common than syphilis, gonorrhea, or genital herpes."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What form of contraception, first approved for use in the United States in 1960, is often credited with sparking the sexual revolution?",
+      "options": [
+        "Diaphragm",
+        "Condom",
+        "Birth control pill",
+        "Intrauterine device (IUD)"
+      ],
+      "correctIndex": 2,
+      "explanation": "The first widely available oral contraceptive, commonly known as \u0027the pill,\u0027 was approved by the FDA in 1960, marking a pivotal debut in reproductive health."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Where were the first large-scale scientific surveys of human sexual behavior in the United States conducted?",
+      "options": [
+        "The Masters and Johnson Institute in St. Louis",
+        "The Hite Report research in New York",
+        "The Kinsey Reports at Indiana University",
+        "The Janus Report surveys in San Francisco"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Kinsey Reports were landmark publications on human sexuality by Alfred Kinsey, based on interviews conducted at Indiana University, Bloomington. The correct answer is"
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In what year was the first oral contraceptive pill approved by the U.S. Food and Drug Administration?",
+      "options": [
+        "1984",
+        "1950",
+        "1973",
+        "1960"
+      ],
+      "correctIndex": 0,
+      "explanation": "This question is based on the widely known fact that the first birth control pill was approved by the FDA in 1960, a landmark date in reproductive health history."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which infestation is most commonly associated with transmission through sexual contact?",
+      "options": [
+        "Athlete\u0027s foot",
+        "Ringworm",
+        "The common cold",
+        "Pubic lice"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pubic lice are tiny insects that infest coarse body hair, including pubic hair, and are distinct from head lice, which live on the scalp."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which structure is a muscular tube that transports mature sperm from the epididymis to the urethra during ejaculation?",
+      "options": [
+        "Vas deferens",
+        "Cowper\u0027s gland",
+        "Seminal vesicle",
+        "Epididymis"
+      ],
+      "correctIndex": 0,
+      "explanation": "The vas deferens is the tube that carries sperm from the epididymis to the ejaculatory duct. The epididymis stores sperm, the seminal vesicles produce fluid, and the Cowper\u0027s glands secrete pre-ejaculate."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which chromosomal condition is most commonly caused by a trisomy of the 21st pair?",
+      "options": [
+        "Down syndrome",
+        "Cri du chat syndrome",
+        "Klinefelter syndrome",
+        "Turner syndrome"
+      ],
+      "correctIndex": 0,
+      "explanation": "The correct answer is trisomy 21 because the condition Down syndrome is most commonly caused by an extra copy of chromosome 21."
+    }
+  ]
+}

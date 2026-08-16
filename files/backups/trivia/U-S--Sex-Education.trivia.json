@@ -1,0 +1,87 @@
+{
+  "name": "U.S. Sex Education",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "Which of these is a real slogan from a U.S.-based sex-education program?",
+      "options": [
+        "Don\u0027t be a dope, use a rope",
+        "It takes two",
+        "Protect yourself, not just your heart",
+        "With knowledge comes freedom"
+      ],
+      "correctIndex": 1,
+      "explanation": "The abstinence-only sex-education program \u0022Sex Respect\u0022 used the slogan \u0022Don\u0027t be a dope, use a rope\u0022 to warn about the risks of premarital sex."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "During which decade did the U.S. government first officially designate a specific awareness month for teenage pregnancy prevention?",
+      "options": [
+        "The 1990s",
+        "The 1980s",
+        "The 2000s",
+        "The 1970s"
+      ],
+      "correctIndex": 0,
+      "explanation": "The American Social Health Association established May as \u0027National Teen Pregnancy Prevention Month\u0027 in 1997, later renamed \u0027National Teen Pregnancy Prevention Month\u0027 and then \u0027National Teen Pregnancy Prevention Month\u0027 but the correct fact is that the month was designated in 1997."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What federal slogan defined U.S. sex education policy after the 1996 welfare reform law?",
+      "options": [
+        "\u0027Safe sex is smart sex\u0027",
+        "\u0027Abstinence is the expected standard for all school children\u0027",
+        "\u0027Consent is everything\u0027",
+        "\u0027Know your body, know your rights\u0027"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In what location was the first U.S. sex education program for high school students developed?",
+      "options": [
+        "San Francisco, California",
+        "Atlanta, Georgia",
+        "Chicago, Illinois",
+        "New York City, New York"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which of these individuals co-founded the Sexuality Information and Education Council of the United States (SIECUS) in 1964?",
+      "options": [
+        "Mary Calderone",
+        "Alfred Kinsey",
+        "Dr. Ruth Westheimer",
+        "Margaret Sanger"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mary Calderone was a physician and public health advocate who co-founded SIECUS in 1964 to promote comprehensive sex education, making her a pivotal figure in the field."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which of the following is the title of a real abstinence-focused sex-education curriculum used in U.S. schools?",
+      "options": [
+        "Sex Respect",
+        "Smart Start",
+        "Power to Know",
+        "Safe Choices"
+      ],
+      "correctIndex": 0,
+      "explanation": "The correct answer is \u0027Sex Respect,\u0027 which was a prominent abstinence-only-until-marriage curriculum developed in the 1980s by the Illinois-based organization Project Respect. The other options are fictional slogans that do not correspond to any real, widely recognized U.S. sex-education program."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which state was the first in the U.S. to mandate sex education in public schools?",
+      "options": [
+        "Maryland",
+        "Texas",
+        "California",
+        "New York"
+      ],
+      "correctIndex": 0,
+      "explanation": "In 1988, the state of Maryland passed the first law in the U.S. requiring local school districts to provide sex education, making it the pioneer state in mandating such instruction."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "name": "1980s Sitcoms",
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "text": "In the 1980s sitcom The Cosby Show, what is Cliff Huxtable\u0027s profession?",
+      "options": [
+        "a lawyer",
+        "an architect",
+        "a doctor",
+        "a teacher"
+      ],
+      "correctIndex": 2,
+      "explanation": "In The Cosby Show, Cliff Huxtable is a doctor, which is his profession throughout the series."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "On The Jeffersons, what job did Florence Johnston hold at the Jefferson family\u0027s building?",
+      "options": [
+        "the building\u0027s maid",
+        "the building\u0027s doorman",
+        "the building\u0027s security guard",
+        "the building\u0027s superintendent"
+      ],
+      "correctIndex": 0,
+      "explanation": "In The Jeffersons, Florence Johnston, played by Marla Gibbs, worked as the Jeffersons\u0027 maid."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the 1980s sitcom Cheers, what job does Cliff Clavin hold?",
+      "options": [
+        "A bus driver",
+        "A mailman",
+        "A librarian",
+        "A firefighter"
+      ],
+      "correctIndex": 1,
+      "explanation": "In the 1980s sitcom Cheers, the mailman character Cliff Clavin works for the United States Postal Service."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the 1980s sitcom Family Ties, what job does Steven Keaton hold?",
+      "options": [
+        "He is a manager at a public television station.",
+        "He is an architect.",
+        "He is a newspaper editor.",
+        "He is a high school history teacher."
+      ],
+      "correctIndex": 0,
+      "explanation": "In the 1980s sitcom Family Ties, Steven Keaton is a manager at the local public television station, WKS, a fact that distinguishes him from the other professions listed."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "On what date did the 1980s sitcom The Golden Girls first premiere on television?",
+      "options": [
+        "October 5, 1984",
+        "March 27, 1987",
+        "September 14, 1985",
+        "December 9, 1985"
+      ],
+      "correctIndex": 2,
+      "explanation": "The 1980s sitcom The Golden Girls aired its first episode on September 14, 1985, on NBC."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "What is the name of the theme song for the 1980s sitcom The Golden Girls?",
+      "options": [
+        "Cheers",
+        "Friends",
+        "I\u0027ll Be There for You",
+        "Thank You for Being a Friend"
+      ],
+      "correctIndex": 3,
+      "explanation": "The theme song of the 1980s sitcom The Golden Girls is titled \u0027Thank You for Being a Friend.\u0027"
+    },
+    {
+      "type": "multipleChoice",
+      "text": "Which of the following sitcom star\u2019s is known for saying, \u201CDiiiid I do that? \uD83D\uDC40 \u201D",
+      "options": [
+        "Alex P Keaton from Family Ties",
+        "Corey from Boy Meets World",
+        "Steve Urkel from Family Matters",
+        "Michelle from Full House"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "type": "multipleChoice",
+      "text": "How many beers did Norm Peterson drink during the first season of Cheers?",
+      "options": [
+        "37",
+        "34",
+        "28",
+        "42"
+      ],
+      "correctIndex": 0,
+      "explanation": "The bar regular Norm Peterson famously drank 37 beers over the course of the first season of Cheers, a running gag referenced in the show."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "In the 1980s sitcom Happy Days, what is the house number of the Cunningham family home?",
+      "options": [
+        "742 Evergreen Terrace",
+        "1313 Mockingbird Lane",
+        "124 Conch Street",
+        "565 North Clinton Drive"
+      ],
+      "correctIndex": 3,
+      "explanation": "The address of the Cunningham house in Happy Days is 565 North Clinton Drive, a specific detail fans of the show would recognize."
+    },
+    {
+      "type": "multipleChoice",
+      "text": "On the 1980s sitcom Cheers, what professional sport did Sam Malone play before buying the bar?",
+      "options": [
+        "Retired firefighter",
+        "Former astronaut",
+        "Ex-football player",
+        "Ex-baseball pitcher"
+      ],
+      "correctIndex": 3,
+      "explanation": "In the sitcom Cheers, Sam Malone is a former relief pitcher for the Boston Red Sox who owns the bar where the show is set. This is a well-known backstory for the character."
+    }
+  ]
+}

@@ -73,7 +73,7 @@ Each object always has a "text" property which is the question text, an "explana
 When the value of the "type" property is "multipleChoice",  the object will have two additional properties, "options" which is a string array consisting of the set of multiple choice options, and "correctIndex", referring the index within the array that's the correct answer (zero-based).
 However, if the object is of type "writeIn", it will have an "answer" property which is the correct answer the players need to type in.
 
-The "questions" array should be 10 elements.
+The "questions" array is typically 10 elements but can vary.
 
 The following shows an example of a question set that's only two elements, but shows both type of questions ("multipleChoice" and "writeIn")
 
