@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A self-contained guide for creating, independently verifying, and preparing Wireclub trivia quizzes.">
+  <title>Wireclub Trivia — Quiz Builder & Verification Guide</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5f6b7a;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --border: #dbe1e8;
+      --code-bg: #111827;
+      --code-text: #e5e7eb;
+      --success: #166534;
+      --success-bg: #dcfce7;
+      --warning: #92400e;
+      --warning-bg: #fffbeb;
+      --danger: #991b1b;
+      --danger-bg: #fef2f2;
+      --purple: #6d28d9;
+      --purple-soft: #f5f3ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 28px 0 52px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      border-radius: 18px;
+      padding: 32px 28px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, .12);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.75rem, 5vw, 2.55rem);
+      line-height: 1.15;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.05rem;
+      opacity: .95;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 4px 9px;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 999px;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    section, .prompt-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 3px 12px rgba(15, 23, 42, .05);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.38rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      margin: 20px 0 7px;
+      font-size: 1.05rem;
+    }
+
+    p { margin: 0 0 12px; }
+
+    .small {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+      margin: 18px 0 0;
+    }
+
+    .workflow .step {
+      position: relative;
+      background: var(--accent-soft);
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 13px 9px;
+      text-align: center;
+      font-size: .82rem;
+      font-weight: 750;
+    }
+
+    .workflow .number {
+      display: block;
+      font-size: .72rem;
+      color: var(--accent);
+      margin-bottom: 3px;
+    }
+
+    .workflow .arrow {
+      position: absolute;
+      right: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .workflow .step:last-child .arrow { display: none; }
+
+    .callout {
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 15px 0;
+      border-left: 4px solid var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .callout.warning {
+      background: var(--warning-bg);
+      border-left-color: #f59e0b;
+    }
+
+    .callout.success {
+      background: var(--success-bg);
+      border-left-color: #22c55e;
+    }
+
+    .callout.danger {
+      background: var(--danger-bg);
+      border-left-color: #ef4444;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .ai-card {
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 17px;
+    }
+
+    .ai-card.creator {
+      background: var(--accent-soft);
+      border-color: #bfdbfe;
+    }
+
+    .ai-card.tester {
+      background: var(--purple-soft);
+      border-color: #ddd6fe;
+    }
+
+    .ai-label {
+      display: inline-block;
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .creator .ai-label { color: var(--accent-dark); }
+    .tester .ai-label { color: var(--purple); }
+
+    .checklist {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+    }
+
+    .checklist li {
+      margin: 8px 0;
+      padding-left: 28px;
+      position: relative;
+    }
+
+    .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--success);
+      font-weight: 900;
+    }
+
+    .crosslist {
+      list-style: none;
+      margin: 10px 0 0;
+      padding: 0;
+    }
+
+    .crosslist li {
+      margin: 8px 0;
+      padding-left: 28px;
+      position: relative;
+    }
+
+    .crosslist li::before {
+      content: "✕";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--danger);
+      font-weight: 900;
+    }
+
+    .stage {
+      border-left: 5px solid var(--accent);
+    }
+
+    .stage-number {
+      display: inline-block;
+      min-width: 34px;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      font-weight: 800;
+      margin-right: 7px;
+      vertical-align: middle;
+    }
+
+    .stage h2 {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 16px 0;
+    }
+
+    button, .fake-button {
+      appearance: none;
+      border: 0;
+      border-radius: 9px;
+      padding: 11px 16px;
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform .08s ease, background .15s ease;
+    }
+
+    button:active { transform: translateY(1px); }
+
+    .primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .primary:hover { background: var(--accent-dark); }
+
+    .secondary {
+      background: #e8edf3;
+      color: var(--text);
+    }
+
+    .secondary:hover { background: #dce3eb; }
+
+    .purple-button {
+      background: var(--purple);
+      color: white;
+    }
+
+    .purple-button:hover { background: #5b21b6; }
+
+    .status {
+      display: inline-block;
+      min-height: 1.5em;
+      color: var(--success);
+      font-weight: 700;
+      align-self: center;
+    }
+
+    .prompt-wrap { position: relative; }
+
+    pre {
+      margin: 0;
+      padding: 18px;
+      background: var(--code-bg);
+      color: var(--code-text);
+      border-radius: 12px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+            "Liberation Mono", monospace;
+    }
+
+    .mini-code {
+      background: var(--code-bg);
+      color: var(--code-text);
+      border-radius: 10px;
+      padding: 13px 15px;
+      margin: 12px 0;
+      font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+            "Liberation Mono", monospace;
+      white-space: pre-wrap;
+    }
+
+    .outcome-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .outcome {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 15px;
+    }
+
+    .outcome.good { background: var(--success-bg); }
+    .outcome.maybe { background: var(--warning-bg); }
+    .outcome.bad { background: var(--danger-bg); }
+
+    .outcome strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    ol {
+      margin: 10px 0 0;
+      padding-left: 1.45rem;
+    }
+
+    li { margin: 8px 0; }
+
+    .tip-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .tip {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .tip strong { display: block; margin-bottom: 4px; }
+
+    .next-page {
+      background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+      border-color: #c7d2fe;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .88rem;
+      padding-top: 3px;
+    }
+
+    @media (max-width: 760px) {
+      .workflow {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .workflow .arrow { display: none; }
+      .two-column, .tip-row, .outcome-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: min(100% - 18px, 920px);
+        padding-top: 10px;
+      }
+
+      header, section, .prompt-card {
+        border-radius: 13px;
+        padding: 18px;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+        text-align: center;
+      }
+
+      pre {
+        font-size: 12px;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main class="page">
+
+  <header>
+    <span class="tag">Wireclub Trivia Tool</span>
+    <h1>Quiz Builder &amp; Verification Guide</h1>
+    <p>Create a trivia quiz, test it independently with another AI, fix ambiguity, and only then prepare it for export.</p>
+  </header>
+
+  <section>
+    <h2>What this guide does</h2>
+    <p class="lead">
+      This page is your step-by-step companion for a two-AI trivia workflow.
+      You do not need to know anything about programming or JSON.
+    </p>
+    <p>
+      The first AI creates the quiz and keeps the answer key. A second AI sees
+      only the questions and answer choices and tries to solve the quiz independently.
+      You then bring those results back to the first AI so it can investigate disagreements.
+    </p>
+
+    <div class="workflow" aria-label="Quiz workflow">
+      <div class="step"><span class="number">STEP 1</span>CREATE<span class="arrow">→</span></div>
+      <div class="step"><span class="number">STEP 2</span>REVIEW<span class="arrow">→</span></div>
+      <div class="step"><span class="number">STEP 3</span>TEST<span class="arrow">→</span></div>
+      <div class="step"><span class="number">STEP 4</span>COMPARE<span class="arrow">→</span></div>
+      <div class="step"><span class="number">STEP 5</span>FIX<span class="arrow">→</span></div>
+      <div class="step"><span class="number">STEP 6</span>PASS</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why use two AIs?</h2>
+    <div class="two-column">
+      <div class="ai-card creator">
+        <div class="ai-label">AI #1 — Quiz Creator</div>
+        <p><strong>Creates the quiz and knows the intended answers.</strong></p>
+        <p class="small">It also reviews the questions, prepares the independent test, and later checks the other AI's answers.</p>
+      </div>
+      <div class="ai-card tester">
+        <div class="ai-label">AI #2 — Independent Tester</div>
+        <p><strong>Sees the quiz without the answer key.</strong></p>
+        <p class="small">Its job is to answer every question itself and point out anything it thinks is ambiguous.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>The goal is not simply to have an answer.</strong>
+      The goal is to create questions where another knowledgeable AI should independently arrive at the same answer.
+    </div>
+  </section>
+
+  <section class="stage">
+    <h2><span class="stage-number">1</span>Create the quiz</h2>
+    <p>
+      Start a conversation with the AI you want to use as your quiz creator.
+      Give it the master prompt below.
+    </p>
+
+    <div class="actions">
+      <button class="primary" type="button" onclick="copyText('masterPrompt', 'masterStatus')">Copy Master Prompt</button>
+      <button class="secondary" type="button" onclick="downloadText('masterPrompt', 'wireclub_trivia_quiz_master_prompt.txt')">Download Master Prompt as .txt</button>
+      <span class="status" id="masterStatus" aria-live="polite"></span>
+    </div>
+
+    <p class="small">
+      After copying it, paste it into a new AI conversation and send it.
+      The AI will first ask you how many questions and how many answer choices you want.
+    </p>
+
+    <div class="prompt-wrap">
+      <pre id="masterPrompt">CREATE A TRIVIA QUIZ + PREPARE IT FOR INDEPENDENT AI VERIFICATION
+
+I want you to create a trivia quiz according to the following workflow.
+
+==================================================
+STEP 1 — ASK ME FOR THE QUIZ PARAMETERS
+==================================================
+
+Before creating anything, ask me these two questions:
+
+1. "How many questions would you like? (10 is recommended, but you can choose any number.)"
+
+2. "How many answer choices would you like for each question? (Choose 4, 5, or 6.)"
+
+Wait for my answers before proceeding.
+
+==================================================
+STEP 2 — CREATE THE QUIZ
+==================================================
+
+Create exactly the number of questions I specify.
+
+Use exactly the number of answer choices I specify for every question.
+
+QUIZ DESIGN RULES:
+
+- Each question should follow the same basic question pattern.
+- Prefer using the same set of answer choices for every question when the quiz format allows it.
+- Each question must have exactly one objectively correct answer.
+- The correct answer should vary from question to question and be reasonably balanced among the available choices.
+- Avoid an obvious pattern in the placement of correct answers.
+- Answer choices should be plausible and clearly distinct.
+- Choose examples where the correct answer is well-established.
+- Avoid questions where two or more answers could reasonably be defended.
+- Prefer famous, recognizable examples rather than obscure ones.
+- If a subject can have multiple possible answers, choose an example where one answer is clearly the primary, most characteristic, standard, or best-known answer.
+- Don't use an example merely because it technically fits; the answer should make good trivia.
+- Keep questions concise and easy to read in a chat room.
+- Don't give away the answer through the wording of the question.
+
+IMPORTANT:
+The goal is not merely to create questions that YOU believe have answers. The goal is to create questions where another knowledgeable AI should independently arrive at the same answers.
+
+==================================================
+STEP 3 — VERIFY THE QUIZ YOURSELF
+==================================================
+
+Before presenting the quiz, internally check every question:
+
+1. Is the question factually accurate?
+2. Is the designated answer factually correct?
+3. Is there only ONE reasonable answer?
+4. Could another knowledgeable person reasonably interpret the question differently?
+5. Are any answer choices overlapping or insufficiently distinct?
+6. Is the wording precise enough to avoid ambiguity?
+7. Are the correct answers reasonably distributed among the choices?
+8. Are the questions interesting and suitable for a general trivia audience?
+
+If a question is ambiguous, revise it before presenting the quiz.
+
+==================================================
+STEP 4 — PRESENT THE QUIZ
+==================================================
+
+Present the quiz normally, followed by an answer key for ME.
+
+Use this format:
+
+1. [Question]
+   A. [Answer choice]
+   B. [Answer choice]
+   C. [Answer choice]
+   D. [Answer choice]
+
+[Continue for the requested number of questions.]
+
+ANSWER KEY:
+1. [letter] — [correct answer]
+2. [letter] — [correct answer]
+3. [letter] — [correct answer]
+etc.
+
+You may include a brief explanation for each answer if useful.
+
+==================================================
+STEP 5 — INDEPENDENT AI VERIFICATION
+==================================================
+
+After I tell you that I like the quiz, I may say something like:
+
+"Prepare this quiz for verification by another AI."
+
+When I do that, create ONE plaintext code block containing a handover prompt for another AI.
+
+The code block must contain:
+
+- The quiz questions.
+- All answer choices.
+- NO answer key.
+- NO explanations that reveal the answers.
+- Instructions telling the other AI that this is an independent verification test.
+- Instructions to answer every question independently rather than trying to infer what the quiz creator intended.
+- Instructions to give its answers in a simple, standardized format.
+
+Use instructions similar to:
+
+"Please independently take this trivia quiz. Do not assume that the quiz creator's intended answers are correct. Determine the best answer to each question yourself. If you believe a question is ambiguous or has more than one defensible answer, explicitly identify it."
+
+Then specify this exact response format:
+
+ANSWERS:
+1. A
+2. C
+3. B
+4. D
+etc.
+
+After the answer list, instruct the other AI to provide:
+
+AMBIGUOUS QUESTIONS:
+- None
+
+or, if applicable:
+
+AMBIGUOUS QUESTIONS:
+- Question 4: [brief explanation of the ambiguity]
+
+The handover prompt should NOT contain the original answer key because that would defeat the purpose of the independent verification.
+
+==================================================
+STEP 6 — CHECK THE OTHER AI'S ANSWERS
+==================================================
+
+After I return with the other AI's answers and say something such as:
+
+"The other AI gave these answers. Confirm whether they are correct."
+
+Compare the other AI's answers against your verified answer key.
+
+For each question, determine whether the other AI selected the correct answer.
+
+Report:
+
+- How many answers were correct.
+- How many were incorrect.
+- Which questions, if any, were incorrect.
+- Whether the other AI identified any ambiguity.
+- Whether YOU now believe any question is actually ambiguous.
+
+IMPORTANT:
+
+Do NOT automatically assume your original answer key is correct.
+
+If the other AI gives a different answer from your answer key, re-examine the question carefully. Determine whether:
+
+1. Your original answer was wrong.
+2. The other AI was wrong.
+3. The question is genuinely ambiguous.
+
+If a question is genuinely ambiguous, tell me that it should be revised before the quiz is exported.
+
+Only tell me that the quiz has passed verification when you are confident that every question has one clear, defensible answer.
+
+==================================================
+STEP 7 — EXPORT
+==================================================
+
+Once I confirm that the quiz has passed verification, I may ask you to export it to another format, such as Wireclub trivia JSON.
+
+At that point, use the export format/instructions I provide.
+
+Do NOT export to JSON during the initial quiz creation or verification-preparation stages unless I specifically ask you to.</pre>
+    </div>
+  </section>
+
+  <section class="stage">
+    <h2><span class="stage-number">2</span>Work with AI #1</h2>
+    <p>
+      Once the master prompt is pasted, the AI should begin by asking you two questions.
+      Answer them normally.
+    </p>
+
+    <div class="callout">
+      <strong>For example:</strong><br>
+      <strong>How many questions?</strong> 10<br>
+      <strong>How many answer choices?</strong> 4
+    </div>
+
+    <p>
+      The AI then creates the quiz, checks each question internally, and presents
+      the quiz followed by an answer key for you.
+    </p>
+
+    <h3>Review the quiz before moving on</h3>
+    <ul class="checklist">
+      <li>Do you like the subject and questions?</li>
+      <li>Are the questions interesting enough for your chat room?</li>
+      <li>Are the answer choices plausible?</li>
+      <li>Does anything look questionable or confusing?</li>
+      <li>Do you want any questions replaced or rewritten?</li>
+    </ul>
+
+    <div class="callout warning">
+      <strong>Don't move to verification until you're happy with the quiz.</strong>
+      You can ask AI #1 to change questions as many times as needed.
+    </div>
+  </section>
+
+  <section class="stage">
+    <h2><span class="stage-number">3</span>Prepare the independent test</h2>
+    <p>
+      When you are satisfied with the quiz, tell AI #1:
+    </p>
+
+    <div class="mini-code">Prepare this quiz for verification by another AI.</div>
+
+    <p>
+      AI #1 should respond with <strong>one plaintext code block</strong> containing
+      a handover prompt. That prompt should include the questions and choices,
+      but deliberately leave out the answer key.
+    </p>
+
+    <div class="two-column">
+      <div class="ai-card creator">
+        <div class="ai-label">The handover should contain</div>
+        <ul class="checklist">
+          <li>Every question</li>
+          <li>Every answer choice</li>
+          <li>Instructions to solve independently</li>
+          <li>Instructions to identify ambiguity</li>
+          <li>A standardized answer format</li>
+        </ul>
+      </div>
+
+      <div class="ai-card tester">
+        <div class="ai-label">The handover must NOT contain</div>
+        <ul class="crosslist">
+          <li>The answer key</li>
+          <li>Explanations that reveal answers</li>
+          <li>Hints about the intended answers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout danger">
+      <strong>Why hide the answers?</strong>
+      If the second AI sees the answer key, it cannot independently test the quiz.
+    </div>
+  </section>
+
+  <section class="stage">
+    <h2><span class="stage-number">4</span>Give the quiz to AI #2</h2>
+    <p>
+      Open a <strong>different AI conversation</strong>. Paste the entire handover
+      prompt produced by AI #1 and send it.
+    </p>
+
+    <p>
+      The second AI is not being asked to guess what the first AI intended.
+      It is being asked to take the quiz as an independent knowledgeable solver.
+    </p>
+
+    <h3>What you want back</h3>
+    <div class="mini-code">ANSWERS:
+1. A
+2. C
+3. B
+4. D
+etc.
+
+AMBIGUOUS QUESTIONS:
+- None</div>
+
+    <p class="small">
+      The exact letters will depend on the quiz. If the second AI thinks a question
+      has more than one defensible answer, it should identify that question and explain why.
+    </p>
+  </section>
+
+  <section class="stage">
+    <h2><span class="stage-number">5</span>Bring the results back to AI #1</h2>
+    <p>
+      Copy the second AI's response and return to the original AI conversation.
+      Then tell AI #1:
+    </p>
+
+    <div class="mini-code">The other AI gave these answers. Confirm whether they are correct.</div>
+
+    <p>
+      Paste the other AI's response after that instruction if necessary.
+      AI #1 should compare those answers with its own answer key and investigate
+      every disagreement.
+    </p>
+
+    <div class="callout warning">
+      <strong>Important:</strong> A disagreement does not automatically mean the
+      second AI is wrong. AI #1 is supposed to reconsider the question itself.
+    </div>
+  </section>
+
+  <section>
+    <h2>What can happen when the AIs disagree?</h2>
+    <p>
+      There are three meaningful possibilities. The purpose of the verification
+      stage is to determine which one actually happened.
+    </p>
+
+    <div class="outcome-grid">
+      <div class="outcome good">
+        <strong>🟢 Your original answer was correct</strong>
+        The second AI simply chose the wrong answer.
+      </div>
+
+      <div class="outcome maybe">
+        <strong>🟡 The other AI was correct</strong>
+        AI #1's original answer key needs to be corrected.
+      </div>
+
+      <div class="outcome bad">
+        <strong>🔴 The question is ambiguous</strong>
+        More than one answer can reasonably be defended. The question should be revised.
+      </div>
+    </div>
+
+    <div class="callout success">
+      <strong>Do not declare victory too quickly.</strong>
+      The quiz should only be considered passed when every question has one clear,
+      defensible answer.
+    </div>
+  </section>
+
+  <section>
+    <h2>What a successful verification looks like</h2>
+    <p>
+      AI #1 should ultimately be able to tell you that the quiz has passed verification
+      only when it is confident that every question has a single clear answer.
+    </p>
+
+    <h3>Ideally, you want:</h3>
+    <ul class="checklist">
+      <li>The second AI's answers match the verified answer key.</li>
+      <li>No question is genuinely ambiguous.</li>
+      <li>Any disagreement has been investigated rather than ignored.</li>
+      <li>Any flawed question has been revised.</li>
+      <li>The final quiz is ready for export.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Common mistakes to avoid</h2>
+
+    <div class="tip-row">
+      <div class="tip">
+        <strong>❌ Exporting too early</strong>
+        Don't turn the quiz into JSON during creation or verification unless you specifically ask for an export.
+      </div>
+      <div class="tip">
+        <strong>❌ Showing AI #2 the answers</strong>
+        That defeats the independent test.
+      </div>
+      <div class="tip">
+        <strong>❌ Treating every disagreement as an AI error</strong>
+        Re-examine the actual wording and choices.
+      </div>
+      <div class="tip">
+        <strong>❌ Keeping a questionable question</strong>
+        If it is genuinely ambiguous, revise it before export.
+      </div>
+      <div class="tip">
+        <strong>❌ Assuming AI #1 can't be wrong</strong>
+        The original answer key is supposed to be reconsidered if challenged.
+      </div>
+      <div class="tip">
+        <strong>❌ Giving AI #2 extra context</strong>
+        The cleaner the independent test, the more useful its result.
+      </div>
+    </div>
+  </section>
+
+  <section class="next-page">
+    <h2>🏁 Quiz passed? Now export it.</h2>
+    <p>
+      Once AI #1 confirms that the quiz has passed verification, you are ready
+      for the next stage: converting the finished quiz into Wireclub's JSON format.
+    </p>
+
+    <p>
+      Use your <strong>Wireclub Trivia — JSON Import Guide</strong> for that step.
+      That separate guide contains the Wireclub JSON conversion prompt and explains
+      how to save the resulting JSON file for import.
+    </p>
+
+    <div class="callout">
+      <strong>The important order is:</strong><br>
+      Create → Review → Independent Verification → Fix Problems → Pass → Export
+    </div>
+  </section>
+
+  <section>
+    <h2>30-second cheat sheet</h2>
+    <ol>
+      <li>Copy the <strong>Master Prompt</strong> above.</li>
+      <li>Paste it into AI #1.</li>
+      <li>Answer the two setup questions.</li>
+      <li>Let AI #1 create and review the quiz.</li>
+      <li>Make any changes you want.</li>
+      <li>Tell AI #1: <strong>“Prepare this quiz for verification by another AI.”</strong></li>
+      <li>Copy the resulting handover prompt.</li>
+      <li>Paste it into AI #2 without adding the answer key.</li>
+      <li>Copy AI #2's answers and ambiguity report.</li>
+      <li>Bring those results back to AI #1.</li>
+      <li>Let AI #1 investigate disagreements.</li>
+      <li>Fix any genuinely ambiguous questions.</li>
+      <li>Once the quiz passes, use the JSON conversion guide.</li>
+    </ol>
+  </section>
+
+  <footer>
+    This page is a standalone HTML file. No external scripts, stylesheets, images, or server-side code are required.
+  </footer>
+
+</main>
+
+<script>
+  function getText(id) {
+    return document.getElementById(id).textContent.trim();
+  }
+
+  function showStatus(id, message) {
+    const el = document.getElementById(id);
+    el.textContent = message;
+    clearTimeout(el._timer);
+    el._timer = setTimeout(function () {
+      el.textContent = "";
+    }, 2500);
+  }
+
+  async function copyText(sourceId, statusId) {
+    const text = getText(sourceId);
+
+    try {
+      await navigator.clipboard.writeText(text);
+      showStatus(statusId, "Copied!");
+    } catch (error) {
+      const area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "fixed";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+
+      try {
+        document.execCommand("copy");
+        showStatus(statusId, "Copied!");
+      } catch (fallbackError) {
+        showStatus(statusId, "Copy failed — select and copy manually.");
+      }
+
+      document.body.removeChild(area);
+    }
+  }
+
+  function downloadText(sourceId, filename) {
+    const text = getText(sourceId);
+    const blob = new Blob([text + "\n"], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
+    setTimeout(function () {
+      URL.revokeObjectURL(url);
+    }, 1000);
+  }
+</script>
+
+</body>
+</html>
